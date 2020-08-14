@@ -1,0 +1,18 @@
+indicator,indicator_label,description,indicator_sort_order,accuracy,scale,prefix,suffix
+population,Population,Population size,1,1000,1,,
+hiv_prevalence,HIV prevalence,Proportion of total population HIV positive,2,0.01,100,,%
+plhiv,PLHIV,Number of people living with HIV,3,100,1,,
+art_coverage,ART coverage,Proportion of PLHIV on ART (residents),4,0.1,100,,%
+art_num_residents,ART number (residents),Number on ART (residents),5,0,NA,,
+art_num_attend,ART number (attending),Number receiving ART (attending),6,NA,NA,,
+hiv_incidence,HIV incidence,HIV incidence rate per year,7,0.01,1000,,
+new_infections,New infections,Number of new infections per year,8,100,NA,,
+anc_prevalence,ANC HIV prevalence,HIV prevalence among ANC attendees,9,0.01,100,,%
+anc_art_coverage,ANC prior ART coverage,ART coverage among ANC attendees prior to first ANC,10,0.1,100,,%
+prop_recent,Proportion recent,Proportion recently infected based on recent infection testing algorithm,11,0.01,100,,%
+evertest,Ever tested,Ever been tested for HIV and received the result,12,0.1,100,,%
+test12m,Tested past 12 months,Been tested for HIV in the past 12 months and received the results,13,0.1,100,,%
+hts_tested,Total HIV tested,Total number tested for HIV through HIV testing services,14,1000,1,,
+hts_tested_pos,Total tested HIV positive,Total number tested HIV positive through HIV testing services,15,1000,1,,
+eversex,Ever had sex,Proportion ever had sex,16,0.1,100,,%
+sex12m,Had sex in past 12 months,Proportion had sex in the past 12 months,17,0.1,100,,%
