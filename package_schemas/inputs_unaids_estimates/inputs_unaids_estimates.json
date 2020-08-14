@@ -208,7 +208,7 @@
       }, {
         "field_name": "schema",
         "preset": "hidden_value",
-        "field_value": "3_geojson_geographic"
+        "field_value": "3_geojson_inputs"
       }, {
         "field_name": "format",
         "label": "Format",
