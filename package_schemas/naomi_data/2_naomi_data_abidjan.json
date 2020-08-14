@@ -210,7 +210,7 @@
       }, {
         "field_name": "schema",
         "preset": "hidden_value",
-        "field_value": "naomi_population"
+        "field_value": "1_population_naomi"
       }, {
         "field_name": "resource_type",
         "preset": "hidden_value",

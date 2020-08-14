@@ -172,7 +172,7 @@
       }, {
         "field_name": "schema",
         "preset": "hidden_value",
-        "field_value": "inputs_unaids_population"
+        "field_value": "2_population_inputs"
       }, {
         "field_name": "resource_type",
         "preset": "hidden_value",
