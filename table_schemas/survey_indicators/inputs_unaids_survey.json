@@ -1,0 +1,130 @@
+{
+  "fields": [{
+      "name": "indicator",
+      "title": "Indicator ID",
+      "description": "The indicator measured by the survey",
+      "type": "string",
+      "constraints": {
+        "required": true
+      }
+    },{
+      "name": "survey_id",
+      "title": "Survey ID",
+      "description": "The ID of the survey",
+      "type": "string",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "survey_mid_calendar_quarter",
+      "title": "Survey Midpoint Calendar Quarter",
+      "description": "The calendar quarter nearest to the midpoint of the survey fieldwork period.",
+      "type": "string",
+      "constraints": {
+          "required": true
+      }
+    },{
+      "name": "area_id",
+      "title": "Area ID",
+      "description": "An area_id from the specified area hierarchy.",
+      "type": "string",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "area_name",
+      "title": "Area Name",
+      "description": "Area name corresponding to area_id (optional).",
+      "type": "string"
+    },
+    {
+      "name": "res_type",
+      "title": "Residence Type",
+      "description": "Residence Type",
+      "type": "string",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "sex",
+      "title": "Sex",
+      "description": "Biological sex.  Must be \"both\", \"male\", or \"female\".",
+      "type": "string",
+      "constraints": {
+        "required": true,
+          "enum": ["both", "female", "male"]
+      }
+    },
+    {
+      "name": "age_group",
+      "title": "Age Group",
+      "description": "The age group",
+      "type": "string",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "n_clusters",
+      "title": "Number of clusters",
+      "description": "The number of survey clusters",
+      "type": "integer",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "n_observations",
+      "title": "Number of observations",
+      "description": "The number of survey observations",
+      "type": "integer",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "estimate",
+      "title": "Estimate",
+      "description": "The value of the survey estimate",
+      "type": "float",
+      "constraints": {
+        "required": true
+      }
+    },{
+      "name": "se",
+      "title": "Standard Error",
+      "description": "The standard error on the estimate",
+      "type": "float",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "ci_lower",
+      "title": "95% Confidence Interval Lower Bound",
+      "description": "The value of the 95% confidence interval lower bound",
+      "type": "float",
+      "constraints": {
+
+      }
+    },
+    {
+      "name": "ci_upper",
+      "title": "95% Confidence Interval Upper Bound",
+      "description": "The value of the 95% confidence interval upper bound",
+      "type": "number",
+      "constraints": {
+
+      }
+    }
+  ],
+  "require_field_order": false,
+  "primaryKey": ["indicator_id", "survey_id", "area_id", "survey_mid_calendar_quarter", "age_group", "sex"],
+  "title": "UNAIDS Survey Indicators Input",
+  "version": "2.0",
+  "description": "If data does not exist, please indicate so with the value \"NA\" and ignore any warning given by Excel."
+
+}
