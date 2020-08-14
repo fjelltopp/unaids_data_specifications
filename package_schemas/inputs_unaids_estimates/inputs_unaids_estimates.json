@@ -198,24 +198,6 @@
       }]
     },
     {
-      "name": "CSAVR Inputs",
-      "about": "A validated CSAVR inputs dataset",
-      "resource_type": "inputs-unaids-csavr",
-      "resource_fields": [{
-        "field_name": "name",
-        "preset": "hidden_value",
-        "field_value": "CSAVR Inputs"
-      }, {
-        "field_name": "schema",
-        "preset": "hidden_value",
-        "field_value": "inputs_unaids_csavr"
-      }, {
-        "field_name": "resource_type",
-        "preset": "hidden_value",
-        "field_value": "inputs-unaids-csavr"
-      }]
-    },
-    {
       "name": "Geographic Data",
       "about": "A validated geographic dataset",
       "resource_type": "inputs-unaids-geographic",
