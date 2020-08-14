@@ -228,7 +228,7 @@
       }, {
         "field_name": "schema",
         "preset": "hidden_value",
-        "field_value": "naomi_geographic"
+        "field_value": "2_geojson_naomi"
       }, {
         "field_name": "format",
         "label": "Format",

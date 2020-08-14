@@ -163,7 +163,7 @@
       }, {
         "field_name": "schema",
         "preset": "hidden_value",
-        "field_value": "geographic_geometry"
+        "field_value": "1_geojson_geographic"
       }]
     }, {
         "name": "Area ID Crosswalk Table",
