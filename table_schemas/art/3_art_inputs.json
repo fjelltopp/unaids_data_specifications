@@ -27,7 +27,7 @@
     {
       "name": "age_group",
       "title": "Age Group",
-      "description": "The age group.",
+      "description": "The age group. Must be either \"Y000_014\" (0-14 y), \"Y015_999\" (15+ y) or \"Y000_999\" (0+). ",
       "type": "string",
       "constraints": {
         "required": true,

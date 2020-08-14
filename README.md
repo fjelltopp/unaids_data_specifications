@@ -4,11 +4,11 @@ Specifications for data inputs requested by UNAIDS
 
 ### ckan_package_schemas
 
-These schemas define the structure of data packages in the ['AIDS Data
-Repository'](https://adr.unaids.org). The packages are made up of a collection
+These schemas define the structure of data packages in the [AIDS Data
+Repository](https://adr.unaids.org). The packages are made up of a collection
 of resources and metadata as defined by the json files.  See the docs of the
 CKAN extension "Scheming"
-(['ckanext-scheming'](https://github.com/ckan/ckanext-scheming)) for the
+([ckanext-scheming](https://github.com/ckan/ckanext-scheming)) for the
 specification of these schemas.
 
 Schemas are organised in sub directories by data package.  Each version of a
@@ -18,7 +18,7 @@ that historical data packages remain well defined.
 ### table_schemas
 
 These schemas are based on Frictionless Data table schemas and are used to
-define the tabular data requested by UNAIDS.  For more information see the ['table schema docs'](https://specs.frictionlessdata.io/table-schema/).
+define the tabular data requested by UNAIDS.  For more information see the [table schema docs](https://specs.frictionlessdata.io/table-schema/).
 
 As with the package schemas, it is important that every complete version of a table
 schema used in production is saved as a separate file so that historical data remains
