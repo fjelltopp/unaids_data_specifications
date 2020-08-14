@@ -154,7 +154,7 @@
       }, {
         "field_name": "schema",
         "preset": "hidden_value",
-        "field_value": "inputs_unaids_survey"
+        "field_value": "3_survey_inputs"
       }, {
         "field_name": "resource_type",
         "preset": "hidden_value",

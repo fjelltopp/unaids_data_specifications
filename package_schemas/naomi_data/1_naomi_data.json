@@ -192,7 +192,7 @@
       }, {
         "field_name": "schema",
         "preset": "hidden_value",
-        "field_value": "naomi_survey"
+        "field_value": "1_survey_naomi"
       }, {
         "field_name": "resource_type",
         "preset": "hidden_value",

@@ -192,7 +192,7 @@
       }, {
         "field_name": "schema",
         "preset": "hidden_value",
-        "field_value": "naomi_survey_abidjan"
+        "field_value": "2_survey_naomi_abidjan"
       }, {
         "field_name": "resource_type",
         "preset": "hidden_value",
