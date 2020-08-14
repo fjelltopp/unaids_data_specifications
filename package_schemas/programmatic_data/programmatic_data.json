@@ -99,7 +99,7 @@
       }, {
         "field_name": "schema",
         "preset": "hidden_value",
-        "field_value": "programmatic_anc"
+        "field_value": "1_anc_programmatic"
       }, {
         "field_name": "resource_type",
         "preset": "hidden_value",
@@ -121,7 +121,7 @@
       }, {
         "field_name": "schema",
         "preset": "hidden_value",
-        "field_value": "programmatic_art"
+        "field_value": "1_art_programmatic"
       }, {
         "field_name": "resource_type",
         "preset": "hidden_value",

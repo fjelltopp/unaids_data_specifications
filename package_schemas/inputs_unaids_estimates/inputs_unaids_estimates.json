@@ -118,7 +118,7 @@
       }, {
         "field_name": "schema",
         "preset": "hidden_value",
-        "field_value": "inputs_unaids_anc"
+        "field_value": "3_anc_inputs"
       }, {
         "field_name": "resource_type",
         "preset": "hidden_value",
@@ -136,7 +136,7 @@
       }, {
         "field_name": "schema",
         "preset": "hidden_value",
-        "field_value": "inputs_unaids_art"
+        "field_value": "3_art_inputs"
       }, {
         "field_name": "resource_type",
         "preset": "hidden_value",
@@ -190,7 +190,7 @@
       }, {
         "field_name": "schema",
         "preset": "hidden_value",
-        "field_value": "inputs_unaids_hiv_testing"
+        "field_value": "1_hiv_testing_inputs"
       }, {
         "field_name": "resource_type",
         "preset": "hidden_value",
