@@ -1,5 +1,7 @@
 # unaids_data_specifications
 
+[![Build Status](https://travis-ci.org/fjelltopp/unaids_data_specifications.svg?branch=master)](https://travis-ci.org/fjelltopp/unaids_data_specifications)
+
 Specifications for data inputs requested by UNAIDS
 
 ### ckan_package_schemas
