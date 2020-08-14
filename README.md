@@ -26,11 +26,16 @@ well defined. The schemas are therefore organised into subdirectories by table t
 
 ### meta_indicators
 
-This table defines all of the indicators for inputs and outputs.
+These tables defines all of the indicators for inputs and outputs.
 
 The fields _accuracy_, _scale_, _prefix_, and _suffix_ define how numerical
 data are displayed following the [`scales`](https://scales.r-lib.org/) R
 package.
+
+### tests
+
+This repository includes tests to check the validity of the data specifications.
+The tests can be run locally using nosetests.  There is also a travis build configured.
 
 ## TODO:
 
