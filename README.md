@@ -14,8 +14,8 @@ CKAN extension "Scheming"
 specification of these schemas.
 
 Schemas are organised in sub directories by data package.  Each version of a
-package schema that has been used in production must be seperately saved so
-that historical data packages remain well defined.
+package schema that has been used in production must be separately saved so
+that historical data packages remain well defined.  An integer version number should be reflected at the start of the file name and also at the end of the "type" field.
 
 ### table_schemas
 
@@ -24,7 +24,7 @@ define the tabular data requested by UNAIDS.  For more information see the [tabl
 
 As with the package schemas, it is important that every complete version of a table
 schema used in production is saved as a separate file so that historical data remains
-well defined. The schemas are therefore organised into subdirectories by table type.
+well defined. The schemas are therefore organised into subdirectories by table type.  An integer version number should be included at the start of the file name, followed by the table name. The file name may finish with a human readable string identifying the purpose of the version. 
 
 ### meta_indicators
 
