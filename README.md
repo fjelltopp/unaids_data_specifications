@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/fjelltopp/unaids_data_specifications.svg?branch=master)](https://travis-ci.org/fjelltopp/unaids_data_specifications)
 
-Specifications for data inputs requested by UNAIDS
+This repository contains the specifications for data used by UNAIDS.  
 
 ### ckan_package_schemas
 
@@ -14,8 +14,8 @@ CKAN extension "Scheming"
 specification of these schemas.
 
 Schemas are organised in sub directories by data package.  Each version of a
-package schema that has been used in production must be seperately saved so
-that historical data packages remain well defined.
+package schema that has been used in production must be separately saved so
+that historical data packages remain well defined.  An integer version number should be reflected at the start of the file name and also at the end of the "type" field.
 
 ### table_schemas
 
@@ -24,7 +24,7 @@ define the tabular data requested by UNAIDS.  For more information see the [tabl
 
 As with the package schemas, it is important that every complete version of a table
 schema used in production is saved as a separate file so that historical data remains
-well defined. The schemas are therefore organised into subdirectories by table type.
+well defined. The schemas are therefore organised into subdirectories by table type.  An integer version number should be included at the start of the file name, followed by the table name. The file name may finish with a human readable string identifying the purpose of the version. 
 
 ### meta_indicators
 
@@ -37,12 +37,22 @@ package.
 ### tests
 
 This repository includes tests to check the validity of the data specifications.
-The tests can be run locally using nosetests.  There is also a travis build configured.
+The tests can be run locally using pytest. There is also a travis build configured.
+
+To run the tests locally:
+  1. `cd tests/`
+  2. `pip install -r requirements.txt`
+  3. `pytest`
 
 ## TODO:
 
-- [ ] Where should this live.
-- [ ] `art_current` versus `art_num_attend` indicator.
-- [ ] Language localisation.
-- [ ] Confirm if okay to drop integer `*_id` columns with Avenir.
-- [ ] Option for country / indicator / level specific numerical displays?
+- [ ] (@jeffeaton) Where should this live.
+- [ ] (@jeffeaton) `art_current` versus `art_num_attend` indicator.
+- [ ] (@jeffeaton) Language localisation.
+- [ ] (@jeffeaton) Confirm if okay to drop integer `*_id` columns with Avenir.
+- [ ] (@jeffeaton) Option for country / indicator / level specific numerical displays?
+- [ ] (@jonathansberry) Comprehensive testing of the json schemas
+- [ ] (@jonathansberry) Test the Excel template creation script
+- [ ] (@jonathansberry) Automate the Excel template creation
+- [ ] (@jonathansberry) Automate the Excel template publishing
+- [ ] (@jonathansberry) Respoitory management/admins/workflows
