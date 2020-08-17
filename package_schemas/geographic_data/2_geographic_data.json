@@ -111,7 +111,7 @@
       }, {
         "field_name": "schema",
         "preset": "hidden_value",
-        "field_value": "geographic_location_hierarchy"
+        "field_value": "1_geographic_location_hierarchy"
       }, {
         "field_name": "resource_type",
         "preset": "hidden_value",
@@ -132,7 +132,7 @@
         }, {
           "field_name": "schema",
           "preset": "hidden_value",
-          "field_value": "geographic_metadata"
+          "field_value": "1_geographic_metadata"
         }, {
           "field_name": "resource_type",
           "preset": "hidden_value",
@@ -180,7 +180,7 @@
         },{
           "field_name": "schema",
           "preset": "hidden_value",
-          "field_value": "geographic_crosswalk"
+          "field_value": "1_geographic_crosswalk"
         }, {
           "field_name": "resource_type",
           "preset": "hidden_value",
