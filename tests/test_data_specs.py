@@ -27,7 +27,7 @@ def test_required_table_schemas_exist():
 def test_restricted_field_in_all_schemas():
     package_schemas = util.package_schemas_generator()
     for schema in package_schemas():
-        log.warning(pformat(schema.keys()))
+        log.debug(pformat(schema.keys()))
         resource_fields = schema['schema']['resource_fields']
         restricted_fields = list(filter(
             lambda x: x['field_name'] == 'restricted',
