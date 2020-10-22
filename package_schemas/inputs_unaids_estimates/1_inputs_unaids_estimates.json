@@ -105,7 +105,32 @@
             "display_group": "Inputs to UNAIDS Estimates 2020"
         }
     ],
-    "resources": [{
+    "resources": [
+        {
+            "name": "Geographic Data",
+            "about": "A validated geographic dataset",
+            "resource_type": "inputs-unaids-geographic",
+            "resource_fields": [{
+                "field_name": "name",
+                "preset": "hidden_value",
+                "field_value": "Geographic Data"
+            }, {
+                "field_name": "schema",
+                "preset": "hidden_value",
+                "field_value": "3_geojson_inputs"
+            }, {
+                "field_name": "format",
+                "label": "Format",
+                "preset": "resource_format_autocomplete",
+                "required": true,
+                "default": "GeoJSON"
+            }, {
+                "field_name": "resource_type",
+                "preset": "hidden_value",
+                "field_value": "inputs-unaids-geographic"
+            }]
+        },
+        {
             "name": "ANC Data",
             "about": "A validated ANC dataset.",
             "resource_type": "inputs-unaids-anc",
@@ -193,30 +218,6 @@
                 "field_name": "resource_type",
                 "preset": "hidden_value",
                 "field_value": "inputs-unaids-hiv-testing"
-            }]
-        },
-        {
-            "name": "Geographic Data",
-            "about": "A validated geographic dataset",
-            "resource_type": "inputs-unaids-geographic",
-            "resource_fields": [{
-                "field_name": "name",
-                "preset": "hidden_value",
-                "field_value": "Geographic Data"
-            }, {
-                "field_name": "schema",
-                "preset": "hidden_value",
-                "field_value": "3_geojson_inputs"
-            }, {
-                "field_name": "format",
-                "label": "Format",
-                "preset": "resource_format_autocomplete",
-                "required": true,
-                "default": "GeoJSON"
-            }, {
-                "field_name": "resource_type",
-                "preset": "hidden_value",
-                "field_value": "inputs-unaids-geographic"
             }]
         },
         {
