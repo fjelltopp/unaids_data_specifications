@@ -86,6 +86,15 @@
       }
     },
     {
+      "name": "n_eff_kish",
+      "title": "Kish effective sample size",
+      "description": "The effective number of observations based on Kish effective sample size",
+      "type": "float",
+      "constraints": {
+
+      }
+    },	
+    {
       "name": "estimate",
       "title": "Estimate",
       "description": "The value of the survey estimate",
@@ -94,7 +103,7 @@
         "required": true
       }
     },{
-      "name": "se",
+      "name": "std_error",
       "title": "Standard Error",
       "description": "The standard error on the estimate",
       "type": "float",
