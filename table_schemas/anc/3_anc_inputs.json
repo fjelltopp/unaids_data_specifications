@@ -31,7 +31,7 @@
       "type": "integer",
       "constraints": {
           "required": true,
-          "minimum": 2014,
+          "minimum": 2010,
           "maximum": 2021
       }
     },

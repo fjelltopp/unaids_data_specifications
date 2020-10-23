@@ -89,16 +89,16 @@
       "name": "n_eff_kish",
       "title": "Kish effective sample size",
       "description": "The effective number of observations based on Kish effective sample size",
-      "type": "float",
+      "type": "number",
       "constraints": {
 
       }
-    },	
+    },
     {
       "name": "estimate",
       "title": "Estimate",
       "description": "The value of the survey estimate",
-      "type": "float",
+      "type": "number",
       "constraints": {
         "required": true
       }
@@ -106,7 +106,7 @@
       "name": "std_error",
       "title": "Standard Error",
       "description": "The standard error on the estimate",
-      "type": "float",
+      "type": "number",
       "constraints": {
         "required": true
       }
@@ -115,7 +115,7 @@
       "name": "ci_lower",
       "title": "95% Confidence Interval Lower Bound",
       "description": "The value of the 95% confidence interval lower bound",
-      "type": "float",
+      "type": "number",
       "constraints": {
 
       }
