@@ -92,7 +92,7 @@
   }],
   "customConstraints": [
     {
-      "constraint": "anc_clients >= anc_known_pos >= anc_already_art",
+      "constraint": "anc_clients >= anc_known_pos",
       "description": "The total number of anc clients must be greater or equal to the number of anc clients tested, which must be greater or equal to the number tested giving a positive result."
     }, {
       "constraint": "anc_clients >= anc_tested >= anc_tested_pos",
