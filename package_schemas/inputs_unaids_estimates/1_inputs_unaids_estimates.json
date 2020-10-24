@@ -119,6 +119,10 @@
                 "preset": "hidden_value",
                 "field_value": "3_geojson_inputs"
             }, {
+                "field_name": "validate_package",
+                "preset": "hidden_value",
+                "field_value": "true"
+            },{
                 "field_name": "format",
                 "label": "Format",
                 "preset": "resource_format_autocomplete",
