@@ -67,6 +67,13 @@
     }
   ],
   "require_field_order": false,
+  "foreignKeys": [{
+    "fields": "area_id",
+    "reference": {
+      "resource": "3_geojson_inputs",
+      "fields": "area_id"
+    }
+  }],
   "primaryKey": ["area_id", "calendar_quarter", "sex", "age_group"],
   "title": "UNAIDS Population Input",
   "version": "2.0",

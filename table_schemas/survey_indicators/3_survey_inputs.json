@@ -86,18 +86,27 @@
       }
     },
     {
+      "name": "n_eff_kish",
+      "title": "Kish effective sample size",
+      "description": "The effective number of observations based on Kish effective sample size",
+      "type": "number",
+      "constraints": {
+
+      }
+    },
+    {
       "name": "estimate",
       "title": "Estimate",
       "description": "The value of the survey estimate",
-      "type": "float",
+      "type": "number",
       "constraints": {
         "required": true
       }
     },{
-      "name": "se",
+      "name": "std_error",
       "title": "Standard Error",
       "description": "The standard error on the estimate",
-      "type": "float",
+      "type": "number",
       "constraints": {
         "required": true
       }
@@ -106,7 +115,7 @@
       "name": "ci_lower",
       "title": "95% Confidence Interval Lower Bound",
       "description": "The value of the 95% confidence interval lower bound",
-      "type": "float",
+      "type": "number",
       "constraints": {
 
       }
@@ -122,7 +131,14 @@
     }
   ],
   "require_field_order": false,
-  "primaryKey": ["indicator_id", "survey_id", "area_id", "survey_mid_calendar_quarter", "age_group", "sex"],
+  "foreignKeys": [{
+    "fields": "area_id",
+    "reference": {
+      "resource": "3_geojson_inputs",
+      "fields": "area_id"
+    }
+  }],
+  "primaryKey": ["indicator", "survey_id", "area_id", "survey_mid_calendar_quarter", "age_group", "sex"],
   "title": "UNAIDS Survey Indicators Input",
   "version": "2.0",
   "description": "If data does not exist, please indicate so with the value \"NA\" and ignore any warning given by Excel."
