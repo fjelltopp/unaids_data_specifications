@@ -155,7 +155,7 @@
             "label": "Format",
             "preset": "resource_format_autocomplete",
             "required": true,
-            "default_jinja2": "geojson"
+            "default": "geojson"
         }, {
             "field_name": "resource_type",
             "preset": "hidden_value",
