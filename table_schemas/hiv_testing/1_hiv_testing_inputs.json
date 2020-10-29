@@ -1,63 +1,83 @@
 {
   "fields": [{
-      "name": "area_id",
-      "title": "Area ID",
-      "description": "An area_id from the specified area hierarchy.",
+      "name": "Country or region",
+      "title": "Country or region",
+      "description": "Country or region",
       "type": "string",
       "constraints": {
         "required": true
       }
     },
     {
-      "name": "area_name",
-      "title": "Area Name",
-      "description": "Area name corresponding to area_id (optional).",
-      "type": "string"
-    },
-    {
-      "name": "age_group",
-      "title": "Age Group",
-      "description": "The age group",
-      "type": "string",
-      "constraints": {
-        "required": true,
-        "enum": ["Y015_999"]
-      }
-    },
-    {
-      "name": "sex",
-      "title": "Sex",
-      "description": "Biological sex.  Must be \"both\"",
-      "type": "string",
-      "constraints": {
-        "required": true,
-        "enum": ["both"]
-      }
-    },
-    {
-      "name": "year",
+      "name": "Year",
       "title": "Year",
       "description": "The calendar year.",
       "type": "integer",
       "constraints": {
           "required": true,
-          "minimum": 2014,
+          "minimum": 1970,
           "maximum": 2021
       }
     },
     {
-      "name": "hts_tested",
-      "title": "Number HTS tested",
-      "description": "Number HTS tested.",
+      "name": "Sex",
+      "title": "Sex",
+      "description": "Biological sex.  Must be \"both\", \"male\" or \"female\"",
+      "type": "string",
+      "constraints": {
+        "required": true,
+        "enum": ["both", "male", "female"]
+      }
+    },
+    {
+      "name": "Total Tests",
+      "title": "Total Tests",
+      "description": "Total Tests",
       "type": "integer",
       "constraints": {
         "minimum": 0
       }
     },
     {
-      "name": "hts_tested_pos",
-      "title": "Number HTS tested positive",
-      "description": "Number HTS tests giving a positive result.",
+      "name": "Total Positive Tests",
+      "title": "Total Positive Tests",
+      "description": "Total Positive Tests",
+      "type": "integer",
+      "constraints": {
+        "minimum": 0
+      }
+    },
+    {
+      "name": "Total HTC Tests",
+      "title": "Total HTC Tests",
+      "description": "Total HTC Tests",
+      "type": "integer",
+      "constraints": {
+        "minimum": 0
+      }
+    },
+    {
+      "name": "Total Positive HTC Tests",
+      "title": "Total Positive HTC Tests",
+      "description": "Total Positive HTC Tests",
+      "type": "integer",
+      "constraints": {
+        "minimum": 0
+      }
+    },
+    {
+      "name": "Total ANC Tests",
+      "title": "Total ANC Tests",
+      "description": "Total ANC Tests",
+      "type": "integer",
+      "constraints": {
+        "minimum": 0
+      }
+    },
+    {
+      "name": "Total Positive ANC Tests",
+      "title": "Total Positive ANC Tests",
+      "description": "Total Positive ANC Tests",
       "type": "integer",
       "constraints": {
         "minimum": 0
@@ -65,12 +85,7 @@
     }
   ],
   "require_field_order": false,
-  "primaryKey": ["area_id", "year", "age_group"],
-  "custom-constraints": [{
-      "constraint": "hts_tested_pos <= hts_tested",
-      "description": "The number of people tested must be greater than or equal to the number of those who tested positive."
-    }
-  ],
+  "primaryKey": ["Country or region", "Year", "Sex"],
   "title": "UNAIDS HIV Testing Input",
   "version": "1.0",
   "description": "If data does not exist, please indicate so with the value \"NA\" and ignore any warning given by Excel."

@@ -66,6 +66,13 @@
        }
     }
   ],
+  "foreignKeys": [{
+    "fields": "area_id",
+    "reference": {
+      "resource": "3_geojson_inputs",
+      "fields": "area_id"
+    }
+  }],
   "require_field_order": false,
   "primaryKey": ["area_id", "sex", "age_group", "year"],
   "title": "UNAIDS ART Programme Input",

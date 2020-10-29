@@ -31,7 +31,7 @@
       "type": "integer",
       "constraints": {
           "required": true,
-          "minimum": 2014,
+          "minimum": 2010,
           "maximum": 2021
       }
     },
@@ -83,9 +83,16 @@
   ],
   "require_field_order": false,
   "primaryKey": ["area_id", "year", "age_group"],
-  "custom-constraints": [
+  "foreignKeys": [{
+    "fields": "area_id",
+    "reference": {
+      "resource": "3_geojson_inputs",
+      "fields": "area_id"
+    }
+  }],
+  "customConstraints": [
     {
-      "constraint": "anc_clients >= anc_known_pos >= anc_already_art",
+      "constraint": "anc_clients >= anc_known_pos",
       "description": "The total number of anc clients must be greater or equal to the number of anc clients tested, which must be greater or equal to the number tested giving a positive result."
     }, {
       "constraint": "anc_clients >= anc_tested >= anc_tested_pos",
