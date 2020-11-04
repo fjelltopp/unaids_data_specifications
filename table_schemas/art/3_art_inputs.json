@@ -40,7 +40,7 @@
       "description": "The calendar quarter reflected the end of reporting period. Formatted as CY20XXQY, for example CY2020Q4 for end of December 2020.",
       "type": "string",
       "constraints": {
-          "required": true,
+          "required": true
       }
     },
     {
