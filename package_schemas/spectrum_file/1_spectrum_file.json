@@ -27,7 +27,6 @@
             "field_name": "tag_string",
             "label": "Tags",
             "preset": "tag_string_autocomplete",
-            "form_placeholder": "Spectrum",
             "default": "Spectrum"
         },
         {
@@ -108,7 +107,7 @@
             "label": "Format",
             "preset": "resource_format_autocomplete",
             "required": true,
-            "default_jinja2": "pjnz"
+            "default": "pjnz"
         },
         {
             "field_name": "restricted",
