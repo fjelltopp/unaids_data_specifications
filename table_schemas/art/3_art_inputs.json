@@ -35,14 +35,12 @@
       }
     },
     {
-      "name": "year",
-      "title": "Year",
-      "description": "The year.",
-      "type": "integer",
+      "name": "calendar_quarter",
+      "title": "Calendar Quarter",
+      "description": "The calendar quarter reflected the end of reporting period. Formatted as CY20XXQY, for example CY2020Q4 for end of December 2020.",
+      "type": "string",
       "constraints": {
-          "required": true,
-          "minimum": 1970,
-          "maximum": 2021
+          "required": true
       }
     },
     {
@@ -54,16 +52,6 @@
         "required": true,
         "minimum": 0
       }
-    },
-    {
-       "name": "art_new",
-       "title": "Number newly initiating ART",
-       "description": "Number newly initiating ART during the reporting period (year).",
-       "type": "number",
-       "constraints": {
-         "required": false,
-         "minimum": 0
-       }
     }
   ],
   "foreignKeys": [{
@@ -74,7 +62,7 @@
     }
   }],
   "require_field_order": false,
-  "primaryKey": ["area_id", "sex", "age_group", "year"],
+  "primaryKey": ["area_id", "sex", "age_group", "calendar_quarter"],
   "title": "UNAIDS ART Programme Input",
   "version": "2.0",
   "description": "If data does not exist, please indicate so with the value \"NA\" and ignore any warning given by Excel."
