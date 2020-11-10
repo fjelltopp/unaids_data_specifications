@@ -46,6 +46,14 @@
             "preset": "dataset_organization"
         },
         {
+            "field_name": "org_to_allow_transfer_to",
+            "label": "Transfer to",
+            "preset": "org_to_allow_transfer_to",
+            "private": false,
+            "visibility_classes": ["hidden"],
+            "display_group": "Inputs to UNAIDS Estimates 2020"
+        },
+        {
             "field_name": "maintainer",
             "label": "Maintainer",
             "form_placeholder": "Joe Bloggs",
