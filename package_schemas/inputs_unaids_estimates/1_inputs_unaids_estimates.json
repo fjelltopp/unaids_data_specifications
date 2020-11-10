@@ -1,8 +1,8 @@
 {
     "scheming_version": 1,
     "dataset_type": "inputs-unaids-estimates",
-    "name": "Inputs to UNAIDS Estimates 2020",
-    "link_name": "Inputs to UNAIDS Estimates 2020",
+    "name": "Inputs to UNAIDS Estimates 2021",
+    "link_name": "Inputs to UNAIDS Estimates 2021",
     "about": "",
     "about_url": "http://github.com/ckan/ckanext-scheming",
     "add_data_on_create": false,
@@ -12,10 +12,10 @@
             "form_snippet": "text.html",
             "validators": "autogenerate",
             "classes": ["hidden"],
-            "template": "{} Inputs UNAIDS Estimates 2020",
+            "template": "{} Inputs UNAIDS Estimates 2021",
             "template_args": ["geo-location", "year"],
             "template_formatters": ["comma_swap"],
-            "display_group": "Inputs to UNAIDS Estimates 2020"
+            "display_group": "Inputs to UNAIDS Estimates 2021"
         },
         {
             "field_name": "name",
@@ -23,10 +23,10 @@
             "form_snippet": "text.html",
             "validators": "autogenerate auto_create_valid_name not_empty unicode name_validator package_name_validator",
             "classes": ["hidden"],
-            "template": "{}-inputs-unaids-estimates-2020",
+            "template": "{}-inputs-unaids-estimates-2021",
             "template_args": ["geo-location", "year"],
             "template_formatters": ["slugify"],
-            "display_group": "Inputs to UNAIDS Estimates 2020"
+            "display_group": "Inputs to UNAIDS Estimates 2021"
         },
         {
             "field_name": "geo-location",
@@ -35,7 +35,7 @@
             "preset": "country_list",
             "display_property": "dc:contributor",
             "validators": "not_empty unique_combination",
-            "display_group": "Inputs to UNAIDS Estimates 2020"
+            "display_group": "Inputs to UNAIDS Estimates 2021"
         },
         {
             "field_name": "tag_string",
@@ -43,7 +43,7 @@
             "preset": "tag_string_autocomplete",
             "default": "UNAIDS Inputs, ANC, ART, SVY",
             "classes": ["hidden"],
-            "display_group": "Inputs to UNAIDS Estimates 2020"
+            "display_group": "Inputs to UNAIDS Estimates 2021"
         },
         {
             "field_name": "maintainer",
@@ -53,7 +53,7 @@
             "form_placeholder": "e.g. Joe Bloggs",
             "display_property": "dc:contributor",
             "validators": "not_empty",
-            "display_group": "Inputs to UNAIDS Estimates 2020"
+            "display_group": "Inputs to UNAIDS Estimates 2021"
         },
         {
             "field_name": "maintainer_email",
@@ -62,14 +62,14 @@
             "display_snippet": "email.html",
             "display_email_name_field": "maintainer",
             "validators": "email_validator",
-            "display_group": "Inputs to UNAIDS Estimates 2020"
+            "display_group": "Inputs to UNAIDS Estimates 2021"
         },
         {
             "field_name": "notes",
             "label": "Description/Source",
             "form_snippet": "markdown.html",
-            "default": "Inputs to UNAIDS Estimates 2020.",
-            "display_group": "Inputs to UNAIDS Estimates 2020"
+            "default": "Inputs to UNAIDS Estimates 2021.",
+            "display_group": "Inputs to UNAIDS Estimates 2021"
         },
         {
             "field_name": "license_id",
@@ -78,7 +78,7 @@
             "default": "cc-by-igo",
             "classes": ["hidden"],
             "help_text": "License definitions and additional information can be found at http://opendefinition.org/",
-            "display_group": "Inputs to UNAIDS Estimates 2020"
+            "display_group": "Inputs to UNAIDS Estimates 2021"
         },
         {
             "field_name": "owner_org",
@@ -86,15 +86,15 @@
             "preset": "dataset_organization",
             "private": false,
             "visibility_classes": ["hidden"],
-            "display_group": "Inputs to UNAIDS Estimates 2020"
+            "display_group": "Inputs to UNAIDS Estimates 2021"
         },
         {
             "label": "Year",
             "field_name": "year",
             "preset": "hidden_value",
-            "field_value": "2020",
+            "field_value": "2021",
             "validators": "unique_combination",
-            "display_group": "Inputs to UNAIDS Estimates 2020"
+            "display_group": "Inputs to UNAIDS Estimates 2021"
         },
         {
             "label": "Data Type",
@@ -102,7 +102,7 @@
             "preset": "hidden_value",
             "field_value": "Inputs to UNAIDS Estimates",
             "validators": "unique_combination",
-            "display_group": "Inputs to UNAIDS Estimates 2020"
+            "display_group": "Inputs to UNAIDS Estimates 2021"
         }
     ],
     "resources": [
