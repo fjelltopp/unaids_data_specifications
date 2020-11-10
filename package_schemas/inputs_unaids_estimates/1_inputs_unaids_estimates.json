@@ -1,8 +1,8 @@
 {
     "scheming_version": 1,
     "dataset_type": "inputs-unaids-estimates",
-    "name": "Inputs to UNAIDS Estimates 2020",
-    "link_name": "Inputs to UNAIDS Estimates 2020",
+    "name": "Inputs to UNAIDS Estimates 2021",
+    "link_name": "Inputs to UNAIDS Estimates 2021",
     "about": "",
     "about_url": "http://github.com/ckan/ckanext-scheming",
     "add_data_on_create": false,
