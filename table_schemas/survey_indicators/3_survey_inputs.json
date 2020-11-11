@@ -140,7 +140,7 @@
   }],
   "primaryKey": ["indicator", "survey_id", "area_id", "survey_mid_calendar_quarter", "age_group", "sex"],
   "title": "UNAIDS Survey Indicators Input",
-  "version": "2.0",
+  "version": "2.1",
   "description": "If data does not exist, please indicate so with the value \"NA\" and ignore any warning given by Excel."
 
 }
