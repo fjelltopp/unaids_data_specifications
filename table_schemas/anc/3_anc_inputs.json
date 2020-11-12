@@ -65,7 +65,7 @@
     {
       "name": "anc_tested",
       "title": "Number HIV tested",
-      "description": "Number of unique ANC clients who are tested for HIV during their pregnancy.",
+      "description": "Number of unique ANC clients who are tested for HIV during their pregnancy. N.B. If you collect information on ANC known negatives at first ANC visit who were not tested for HIV please add these into anc_tested",
       "type": "integer",
       "constraints": {
         "minimum": 0
@@ -104,5 +104,5 @@
   ],
   "title": "UNAIDS ANC Cascade Input",
   "description": "If data does not exist, please indicate so with the value \"NA\" and ignore any warning given by Excel.",
-  "version": "2.1"
+  "version": "2.2"
 }

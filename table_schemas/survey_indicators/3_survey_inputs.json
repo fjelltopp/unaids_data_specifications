@@ -43,10 +43,7 @@
       "name": "res_type",
       "title": "Residence Type",
       "description": "Residence Type",
-      "type": "string",
-      "constraints": {
-        "required": true
-      }
+      "type": "string"
     },
     {
       "name": "sex",
