@@ -95,11 +95,8 @@
       "constraint": "anc_clients >= anc_known_pos",
       "description": "The total number of anc clients must be greater or equal to the number of anc clients tested, which must be greater or equal to the number tested giving a positive result."
     }, {
-      "constraint": "anc_clients >= anc_tested >= anc_tested_pos",
+      "constraint": "anc_clients >= anc_tested_pos",
       "description": "The total number of anc clients must be greater or equal to the number of clients already known to be HIV positive, which must be greater or equal to the number of clients who are already on art."
-    }, {
-      "constraint": "anc_clients >= anc_known_pos + anc_tested",
-      "description": "The total number of ANC clients must be greater or equal to the number already known to be positive and the number tested."
     }
   ],
   "title": "UNAIDS ANC Cascade Input",
