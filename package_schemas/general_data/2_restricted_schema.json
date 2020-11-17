@@ -52,6 +52,10 @@
             "visibility_classes": ["hidden"]
         },
         {
+            "field_name": "org_to_allow_transfer_to",
+            "preset": "org_to_allow_transfer_to"
+        },
+        {
             "field_name": "maintainer",
             "label": "Contact Name",
             "preset": "user",

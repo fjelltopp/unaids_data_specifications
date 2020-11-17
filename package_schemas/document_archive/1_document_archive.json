@@ -46,6 +46,10 @@
             "preset": "dataset_organization"
         },
         {
+            "field_name": "org_to_allow_transfer_to",
+            "preset": "org_to_allow_transfer_to"
+        },
+        {
             "field_name": "maintainer",
             "label": "Maintainer",
             "form_placeholder": "Joe Bloggs",
