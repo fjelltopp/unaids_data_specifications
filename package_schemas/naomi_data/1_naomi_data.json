@@ -96,12 +96,7 @@
       "private": false,
       "visibility_classes": ["hidden"],
       "display_group": "Naomi Data Package"
-    },
-    {
-      "field_name": "org_to_allow_transfer_to",
-      "preset": "org_to_allow_transfer_to",
-      "display_group": "Naomi Data Package"
-    },
+    },    
     {
       "label": "Data Type",
       "field_name": "type_name",
@@ -109,6 +104,11 @@
       "field_value": "Naomi Data",
       "validators": "unique_combination",
       "display_group": "Naomi Inputs and Outputs"
+    },
+    {
+      "field_name": "org_to_allow_transfer_to",
+      "preset": "org_to_allow_transfer_to",
+      "display_group": "Naomi Data Package"
     }
   ],
   "resources": [{

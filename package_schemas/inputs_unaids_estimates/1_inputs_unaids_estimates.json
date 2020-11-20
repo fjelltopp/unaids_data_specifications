@@ -87,12 +87,7 @@
             "private": false,
             "visibility_classes": ["hidden"],
             "display_group": "Inputs to UNAIDS Estimates 2021"
-        },
-        {
-            "field_name": "org_to_allow_transfer_to",
-            "preset": "org_to_allow_transfer_to",
-            "display_group": "Inputs to UNAIDS Estimates 2021"
-        },
+        },        
         {
             "label": "Year",
             "field_name": "year",
@@ -107,6 +102,11 @@
             "preset": "hidden_value",
             "field_value": "Inputs to UNAIDS Estimates",
             "validators": "unique_combination",
+            "display_group": "Inputs to UNAIDS Estimates 2021"
+        },
+        {
+            "field_name": "org_to_allow_transfer_to",
+            "preset": "org_to_allow_transfer_to",
             "display_group": "Inputs to UNAIDS Estimates 2021"
         }
     ],
