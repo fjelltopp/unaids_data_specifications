@@ -50,11 +50,7 @@
             "preset": "dataset_organization",
             "private": false,
             "visibility_classes": ["hidden"]
-        },
-        {
-            "field_name": "org_to_allow_transfer_to",
-            "preset": "org_to_allow_transfer_to"
-        },
+        },        
         {
             "field_name": "maintainer",
             "label": "Contact Name",
@@ -77,6 +73,10 @@
             "field_name": "type_name",
             "preset": "hidden_value",
             "field_value": "General Data"
+        },
+        {
+            "field_name": "org_to_allow_transfer_to",
+            "preset": "org_to_allow_transfer_to"
         }
     ],
     "resource_fields": [{
