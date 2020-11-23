@@ -86,16 +86,16 @@
             "field_name": "owner_org",
             "label": "Organization",
             "preset": "dataset_organization"
-        },
-        {
-            "field_name": "org_to_allow_transfer_to",
-            "preset": "org_to_allow_transfer_to"
-        },
+        },        
         {
             "label": "Data Type",
             "field_name": "type_name",
             "preset": "hidden_value",
             "field_value": "Spectrum File"
+        },
+        {
+            "field_name": "org_to_allow_transfer_to",
+            "preset": "org_to_allow_transfer_to"
         }
     ],
     "resource_fields": [{
