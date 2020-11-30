@@ -233,7 +233,6 @@
             "name": "Spectrum File",
             "about": "A spectrum file used to run the Naomi model",
             "resource_type": "inputs-unaids-spectrum-file",
-            "bulk_upload": true,
             "resource_fields": [{
                 "field_name": "name",
                 "preset": "hidden_value",
@@ -248,18 +247,12 @@
                 "field_name": "resource_type",
                 "preset": "hidden_value",
                 "field_value": "inputs-unaids-spectrum-file"
-            }, {
-                "field_name": "url",
-                "label": "URL",
-                "preset": "resource_url_upload",
-                "upload_label": "File (bulk drag-drop upload available)"
             }]
         },
         {
             "name": "Shiny90 Survey Data",
-            "about": "Shiny90 survey data input.",
+            "about": "Shiny90 survey data input",
             "resource_type": "inputs-unaids-shiny90-survey",
-            "bulk_upload": true,
             "resource_fields": [{
                 "field_name": "name",
                 "preset": "hidden_value",
@@ -274,7 +267,6 @@
             "name": "Shiny90 Output ZIP",
             "about": "The Shiny90 output zip file",
             "resource_type": "inputs-unaids-shiny90-output-zip",
-            "bulk_upload": true,
             "resource_fields": [{
                 "field_name": "name",
                 "preset": "hidden_value",
@@ -295,7 +287,6 @@
             "name": "Naomi Output ZIP",
             "about": "The Naomi output zip file",
             "resource_type": "inputs-unaids-naomi-output-zip",
-            "bulk_upload": true,
             "resource_fields": [{
                 "field_name": "name",
                 "preset": "hidden_value",
