@@ -212,13 +212,13 @@
             }]
         },
         {
-            "name": "HIV Testing Data",
-            "about": "A validated HIV testing dataset",
+            "name": "Shiny90 HIV Testing Data",
+            "about": "A validated Shiny90 HIV testing input",
             "resource_type": "inputs-unaids-hiv-testing",
             "resource_fields": [{
                 "field_name": "name",
                 "preset": "hidden_value",
-                "field_value": "HIV Testing Data"
+                "field_value": "Shiny90 HIV Testing Data"
             }, {
                 "field_name": "schema",
                 "preset": "hidden_value",
@@ -233,7 +233,6 @@
             "name": "Spectrum File",
             "about": "A spectrum file used to run the Naomi model",
             "resource_type": "inputs-unaids-spectrum-file",
-            "bulk_upload": true,
             "resource_fields": [{
                 "field_name": "name",
                 "preset": "hidden_value",
@@ -248,11 +247,60 @@
                 "field_name": "resource_type",
                 "preset": "hidden_value",
                 "field_value": "inputs-unaids-spectrum-file"
+            }]
+        },
+        {
+            "name": "Shiny90 Survey Data",
+            "about": "Shiny90 survey data input",
+            "resource_type": "inputs-unaids-shiny90-survey",
+            "resource_fields": [{
+                "field_name": "name",
+                "preset": "hidden_value",
+                "field_value": "Shiny 90 Survey Data"
+            },  {
+                "field_name": "resource_type",
+                "preset": "hidden_value",
+                "field_value": "inputs-unaids-shiny90-survey"
+            }]
+        },
+        {
+            "name": "Shiny90 Output ZIP",
+            "about": "The Shiny90 output zip file",
+            "resource_type": "inputs-unaids-shiny90-output-zip",
+            "resource_fields": [{
+                "field_name": "name",
+                "preset": "hidden_value",
+                "field_value": "Shiny 90 Output ZIP"
             }, {
-                "field_name": "url",
-                "label": "URL",
-                "preset": "resource_url_upload",
-                "upload_label": "File (bulk drag-drop upload available)"
+                "field_name": "format",
+                "label": "Format",
+                "preset": "resource_format_autocomplete",
+                "required": true,
+                "default": "ZIP"
+            }, {
+                "field_name": "resource_type",
+                "preset": "hidden_value",
+                "field_value": "inputs-unaids-shiny90-output-zip"
+            }]
+        },
+        {
+            "name": "Naomi Output ZIP",
+            "about": "The Naomi output zip file",
+            "resource_type": "inputs-unaids-naomi-output-zip",
+            "resource_fields": [{
+                "field_name": "name",
+                "preset": "hidden_value",
+                "field_value": "Naomi Output ZIP"
+            }, {
+                "field_name": "format",
+                "label": "Format",
+                "preset": "resource_format_autocomplete",
+                "required": true,
+                "default": "ZIP"
+            }, {
+                "field_name": "resource_type",
+                "preset": "hidden_value",
+                "field_value": "inputs-unaids-naomi-output-zip"
             }]
         }
     ],
