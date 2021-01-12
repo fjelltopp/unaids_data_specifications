@@ -68,10 +68,7 @@
       "name": "n_clusters",
       "title": "Number of clusters",
       "description": "The number of survey clusters",
-      "type": "integer",
-      "constraints": {
-        "required": true
-      }
+      "type": "integer"
     },
     {
       "name": "n_observations",
