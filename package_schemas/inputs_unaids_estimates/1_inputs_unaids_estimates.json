@@ -302,6 +302,26 @@
                 "preset": "hidden_value",
                 "field_value": "inputs-unaids-naomi-output-zip"
             }]
+        },
+        {
+            "name": "Naomi Results and Summary Report",
+            "about": "The Naomi HTML report file",
+            "resource_type": "inputs-unaids-naomi-report",
+            "resource_fields": [{
+                "field_name": "name",
+                "preset": "hidden_value",
+                "field_value": "Naomi Results and Summary Report"
+            }, {
+                "field_name": "format",
+                "label": "Format",
+                "preset": "resource_format_autocomplete",
+                "required": true,
+                "default": "URL"
+            }, {
+                "field_name": "resource_type",
+                "preset": "hidden_value",
+                "field_value": "inputs-unaids-naomi-report"
+            }]
         }
     ],
     "resource_fields": [{
