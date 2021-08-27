@@ -100,7 +100,7 @@
             "label": "Data Type",
             "field_name": "type_name",
             "preset": "hidden_value",
-            "field_value": "Inputs to UNAIDS Estimates",
+            "field_value": "Country Estimates Data",
             "validators": "unique_combination",
             "display_group": "Inputs to UNAIDS Estimates 2021"
         },
