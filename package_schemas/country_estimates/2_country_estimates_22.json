@@ -100,7 +100,7 @@
             "label": "Data Type",
             "field_name": "type_name",
             "preset": "hidden_value",
-            "field_value": "Country Estimates Data",
+            "field_value": "Country Estimates",
             "validators": "unique_combination",
             "display_group": "Country Estimates 2022"
         },

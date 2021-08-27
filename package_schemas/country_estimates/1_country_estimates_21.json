@@ -1,7 +1,7 @@
 {
     "scheming_version": 1,
     "dataset_type": "inputs-unaids-estimates",
-    "name": "Inputs to UNAIDS Estimates 2021",
+    "name": "Country Estimates 2021",
     "link_name": "Inputs to UNAIDS Estimates 2021",
     "about": "",
     "about_url": "http://github.com/ckan/ckanext-scheming",
@@ -100,7 +100,7 @@
             "label": "Data Type",
             "field_name": "type_name",
             "preset": "hidden_value",
-            "field_value": "Country Estimates Data",
+            "field_value": "Country Estimates",
             "validators": "unique_combination",
             "display_group": "Inputs to UNAIDS Estimates 2021"
         },
