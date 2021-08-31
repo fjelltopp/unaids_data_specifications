@@ -12,7 +12,7 @@
             "form_snippet": "text.html",
             "validators": "autogenerate",
             "classes": ["hidden"],
-            "template": "{} Inputs UNAIDS Estimates 2022",
+            "template": "{} Country Estimates 2022",
             "template_args": ["geo-location", "year"],
             "template_formatters": ["comma_swap"],
             "display_group": "Country Estimates 2022"
@@ -23,7 +23,7 @@
             "form_snippet": "text.html",
             "validators": "autogenerate auto_create_valid_name not_empty unicode name_validator package_name_validator",
             "classes": ["hidden"],
-            "template": "{}-inputs-unaids-estimates-2022",
+            "template": "{}-country-estimates-2022",
             "template_args": ["geo-location", "year"],
             "template_formatters": ["slugify"],
             "display_group": "Country Estimates 2022"
@@ -41,7 +41,7 @@
             "field_name": "tag_string",
             "label": "Tags",
             "preset": "tag_string_autocomplete",
-            "default": "UNAIDS Inputs, ANC, ART, SVY, Country Estimates",
+            "default": "ANC, ART, SVY, Country Estimates",
             "classes": ["hidden"],
             "display_group": "Country Estimates 2022"
         },
