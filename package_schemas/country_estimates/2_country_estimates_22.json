@@ -240,7 +240,8 @@
                 "field_name": "format",
                 "label": "Format",
                 "preset": "resource_format_autocomplete",
-                "default": "PJNZ"
+                "validators": "autofill if_empty_guess_format ignore_missing clean_format unicode",
+                "default": "pjnz"
             }, {
                 "field_name": "resource_type",
                 "preset": "hidden_value",
