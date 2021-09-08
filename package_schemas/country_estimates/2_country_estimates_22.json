@@ -13,7 +13,7 @@
             "validators": "autogenerate",
             "classes": ["hidden"],
             "template": "{} HIV Estimates 2022",
-            "template_args": ["geo-location", "year"],
+            "template_args": ["geo-location"],
             "template_formatters": ["comma_swap"],
             "display_group": "HIV Estimates 2022"
         },
@@ -24,7 +24,7 @@
             "validators": "autogenerate auto_create_valid_name not_empty unicode name_validator package_name_validator",
             "classes": ["hidden"],
             "template": "{}-country-estimates-2022",
-            "template_args": ["geo-location", "year"],
+            "template_args": ["geo-location"],
             "template_formatters": ["slugify"],
             "display_group": "HIV Estimates 2022"
         },
@@ -131,7 +131,6 @@
                 "field_name": "format",
                 "label": "Format",
                 "preset": "resource_format_autocomplete",
-                "required": true,
                 "default": "GeoJSON"
             }, {
                 "field_name": "resource_type",
@@ -241,7 +240,6 @@
                 "field_name": "format",
                 "label": "Format",
                 "preset": "resource_format_autocomplete",
-                "required": true,
                 "default": "PJNZ"
             }, {
                 "field_name": "resource_type",
@@ -275,7 +273,6 @@
                 "field_name": "format",
                 "label": "Format",
                 "preset": "resource_format_autocomplete",
-                "required": true,
                 "default": "ZIP"
             }, {
                 "field_name": "resource_type",
@@ -295,7 +292,6 @@
                 "field_name": "format",
                 "label": "Format",
                 "preset": "resource_format_autocomplete",
-                "required": true,
                 "default": "ZIP"
             }, {
                 "field_name": "resource_type",
@@ -315,7 +311,6 @@
                 "field_name": "format",
                 "label": "Format",
                 "preset": "resource_format_autocomplete",
-                "required": true,
                 "default": "URL"
             }, {
                 "field_name": "resource_type",
@@ -343,8 +338,7 @@
         {
             "field_name": "format",
             "label": "Format",
-            "preset": "resource_format_autocomplete",
-            "required": true
+            "preset": "resource_format_autocomplete"
         },
         {
             "field_name": "restricted",

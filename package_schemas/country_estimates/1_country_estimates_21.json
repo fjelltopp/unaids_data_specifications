@@ -1,7 +1,7 @@
 {
     "scheming_version": 1,
     "dataset_type": "inputs-unaids-estimates",
-    "name": "Country Estimates 2021",
+    "name": "Country HIV Estimates 2021",
     "link_name": "Inputs to UNAIDS Estimates 2021",
     "about": "",
     "about_url": "http://github.com/ckan/ckanext-scheming",
@@ -13,7 +13,7 @@
             "validators": "autogenerate",
             "classes": ["hidden"],
             "template": "{} Inputs UNAIDS Estimates 2021",
-            "template_args": ["geo-location", "year"],
+            "template_args": ["geo-location"],
             "template_formatters": ["comma_swap"],
             "display_group": "Inputs to UNAIDS Estimates 2021"
         },
@@ -24,7 +24,7 @@
             "validators": "autogenerate auto_create_valid_name not_empty unicode name_validator package_name_validator",
             "classes": ["hidden"],
             "template": "{}-inputs-unaids-estimates-2021",
-            "template_args": ["geo-location", "year"],
+            "template_args": ["geo-location"],
             "template_formatters": ["slugify"],
             "display_group": "Inputs to UNAIDS Estimates 2021"
         },
@@ -241,8 +241,8 @@
                 "field_name": "format",
                 "label": "Format",
                 "preset": "resource_format_autocomplete",
-                "required": true,
-                "default": "PJNZ"
+                "validators": "autofill if_empty_guess_format ignore_missing clean_format unicode",
+                "default": "pjnz"
             }, {
                 "field_name": "resource_type",
                 "preset": "hidden_value",
@@ -275,7 +275,6 @@
                 "field_name": "format",
                 "label": "Format",
                 "preset": "resource_format_autocomplete",
-                "required": true,
                 "default": "ZIP"
             }, {
                 "field_name": "resource_type",
@@ -295,7 +294,6 @@
                 "field_name": "format",
                 "label": "Format",
                 "preset": "resource_format_autocomplete",
-                "required": true,
                 "default": "ZIP"
             }, {
                 "field_name": "resource_type",
@@ -315,7 +313,6 @@
                 "field_name": "format",
                 "label": "Format",
                 "preset": "resource_format_autocomplete",
-                "required": true,
                 "default": "URL"
             }, {
                 "field_name": "resource_type",
@@ -343,8 +340,7 @@
         {
             "field_name": "format",
             "label": "Format",
-            "preset": "resource_format_autocomplete",
-            "required": true
+            "preset": "resource_format_autocomplete"
         },
         {
             "field_name": "restricted",
