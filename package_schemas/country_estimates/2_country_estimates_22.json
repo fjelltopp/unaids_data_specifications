@@ -1,8 +1,8 @@
 {
     "scheming_version": 1,
     "dataset_type": "country-estimates-22",
-    "name": "Country Estimates 2022",
-    "link_name": "Country Estimates 2022",
+    "name": "Country HIV Estimates 2022",
+    "link_name": "Country HIV Estimates 2022",
     "about": "",
     "about_url": "http://github.com/ckan/ckanext-scheming",
     "add_data_on_create": false,
@@ -12,10 +12,10 @@
             "form_snippet": "text.html",
             "validators": "autogenerate",
             "classes": ["hidden"],
-            "template": "{} Country Estimates 2022",
-            "template_args": ["geo-location", "year"],
+            "template": "{} HIV Estimates 2022",
+            "template_args": ["geo-location"],
             "template_formatters": ["comma_swap"],
-            "display_group": "Country Estimates 2022"
+            "display_group": "HIV Estimates 2022"
         },
         {
             "field_name": "name",
@@ -24,9 +24,9 @@
             "validators": "autogenerate auto_create_valid_name not_empty unicode name_validator package_name_validator",
             "classes": ["hidden"],
             "template": "{}-country-estimates-2022",
-            "template_args": ["geo-location", "year"],
+            "template_args": ["geo-location"],
             "template_formatters": ["slugify"],
-            "display_group": "Country Estimates 2022"
+            "display_group": "HIV Estimates 2022"
         },
         {
             "field_name": "geo-location",
@@ -35,7 +35,7 @@
             "preset": "country_list",
             "display_property": "dc:contributor",
             "validators": "not_empty unique_combination",
-            "display_group": "Country Estimates 2022"
+            "display_group": "HIV Estimates 2022"
         },
         {
             "field_name": "tag_string",
@@ -43,7 +43,7 @@
             "preset": "tag_string_autocomplete",
             "default": "ANC, ART, SVY, Country Estimates",
             "classes": ["hidden"],
-            "display_group": "Country Estimates 2022"
+            "display_group": "HIV Estimates 2022"
         },
         {
             "field_name": "maintainer",
@@ -53,7 +53,7 @@
             "form_placeholder": "e.g. Joe Bloggs",
             "display_property": "dc:contributor",
             "validators": "not_empty",
-            "display_group": "Country Estimates 2022"
+            "display_group": "HIV Estimates 2022"
         },
         {
             "field_name": "maintainer_email",
@@ -62,14 +62,14 @@
             "display_snippet": "email.html",
             "display_email_name_field": "maintainer",
             "validators": "email_validator",
-            "display_group": "Country Estimates 2022"
+            "display_group": "HIV Estimates 2022"
         },
         {
             "field_name": "notes",
             "label": "Description/Source",
             "form_snippet": "markdown.html",
-            "default": "A record of input and output data contributing to the 2022 UNAIDS-supported country estimates of the HIV epidemic.",
-            "display_group": "Country Estimates 2022"
+            "default": "A record of the input data and final HIV estimates.",
+            "display_group": "HIV Estimates 2022"
         },
         {
             "field_name": "license_id",
@@ -78,7 +78,7 @@
             "default": "cc-by-igo",
             "classes": ["hidden"],
             "help_text": "License definitions and additional information can be found at http://opendefinition.org/",
-            "display_group": "Country Estimates 2022"
+            "display_group": "HIV Estimates 2022"
         },
         {
             "field_name": "owner_org",
@@ -86,7 +86,7 @@
             "preset": "dataset_organization",
             "private": false,
             "visibility_classes": ["hidden"],
-            "display_group": "Country Estimates 2022"
+            "display_group": "HIV Estimates 2022"
         },
         {
             "label": "Year",
@@ -94,7 +94,7 @@
             "preset": "hidden_value",
             "field_value": "2022",
             "validators": "unique_combination",
-            "display_group": "Country Estimates 2022"
+            "display_group": "HIV Estimates 2022"
         },
         {
             "label": "Data Type",
@@ -102,12 +102,12 @@
             "preset": "hidden_value",
             "field_value": "Country Estimates",
             "validators": "unique_combination",
-            "display_group": "Country Estimates 2022"
+            "display_group": "HIV Estimates 2022"
         },
         {
             "field_name": "org_to_allow_transfer_to",
             "preset": "org_to_allow_transfer_to",
-            "display_group": "Country Estimates 2022"
+            "display_group": "HIV Estimates 2022"
         }
     ],
     "resources": [
@@ -131,7 +131,6 @@
                 "field_name": "format",
                 "label": "Format",
                 "preset": "resource_format_autocomplete",
-                "required": true,
                 "default": "GeoJSON"
             }, {
                 "field_name": "resource_type",
@@ -241,8 +240,8 @@
                 "field_name": "format",
                 "label": "Format",
                 "preset": "resource_format_autocomplete",
-                "required": true,
-                "default": "PJNZ"
+                "validators": "autofill if_empty_guess_format ignore_missing clean_format unicode",
+                "default": "pjnz"
             }, {
                 "field_name": "resource_type",
                 "preset": "hidden_value",
@@ -275,7 +274,6 @@
                 "field_name": "format",
                 "label": "Format",
                 "preset": "resource_format_autocomplete",
-                "required": true,
                 "default": "ZIP"
             }, {
                 "field_name": "resource_type",
@@ -295,7 +293,6 @@
                 "field_name": "format",
                 "label": "Format",
                 "preset": "resource_format_autocomplete",
-                "required": true,
                 "default": "ZIP"
             }, {
                 "field_name": "resource_type",
@@ -315,7 +312,6 @@
                 "field_name": "format",
                 "label": "Format",
                 "preset": "resource_format_autocomplete",
-                "required": true,
                 "default": "URL"
             }, {
                 "field_name": "resource_type",
@@ -343,8 +339,7 @@
         {
             "field_name": "format",
             "label": "Format",
-            "preset": "resource_format_autocomplete",
-            "required": true
+            "preset": "resource_format_autocomplete"
         },
         {
             "field_name": "restricted",
