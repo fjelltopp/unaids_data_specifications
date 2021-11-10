@@ -1,0 +1,110 @@
+{
+  "fields": [{
+      "name": "Country or region",
+      "title": "Country or region",
+      "description": "Country or region",
+      "type": "string",
+      "constraints": {
+        "required": true
+      }
+    }, {
+        "name": "Survey Id",
+        "title": "Survey ID",
+        "description": "The survey ID e.g. SN2005DHS",
+        "type": "string",
+        "constraints": {
+          "required": true
+        }
+    },
+    {
+      "name": "Year",
+      "title": "Year",
+      "description": "The calendar year.",
+      "type": "integer",
+      "constraints": {
+          "required": true,
+          "minimum": 1970,
+          "maximum": 2022
+      }
+    },
+    {
+      "name": "Age Group",
+      "title": "Age Group",
+      "description": "The indicator's age group.",
+      "type": "string",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "Sex",
+      "title": "Sex",
+      "description": "The indicator's biological sex.  Must be \"both\", \"male\" or \"female\"",
+      "type": "string",
+      "constraints": {
+        "required": true,
+        "enum": ["both", "male", "female"]
+      }
+    },
+    {
+      "name": "HIV Status",
+      "title": "HIV Status",
+      "description": "The indicator's HIV status.",
+      "type": "string",
+      "constraints": {
+        "required": true,
+        "enum": ["all", "negative", "positive"]
+      }
+    },
+    {
+      "name": "Estimate",
+      "title": "Estimate",
+      "description": "The indicator estimate",
+      "type": "number",
+      "constraints": {
+        "minimum": 0
+      }
+    },
+    {
+      "name": "Standard Error",
+      "title": "Standard Error",
+      "description": "The indicator estimate's standard error",
+      "type": "number",
+      "constraints": {
+        "minimum": 0
+      }
+    },
+    {
+      "name": "Lower Confidence Interval",
+      "title": "Lower Confidence Interval",
+      "description": "The indicator estimate's lower confidence interval",
+      "type": "number",
+      "constraints": {
+        "minimum": 0
+      }
+    },
+    {
+      "name": "Upper Confidence Interval",
+      "title": "Upper Confidence Interval",
+      "description": "The indicator estimate's upper confidence interval",
+      "type": "number",
+      "constraints": {
+        "minimum": 0
+      }
+    },
+    {
+      "name": "Counts",
+      "title": "Counts",
+      "description": "Counts",
+      "type": "integer",
+      "constraints": {
+        "minimum": 0
+      }
+    }
+  ],
+  "require_field_order": false,
+  "primaryKey": ["Country or region", "Survey Id", "Year", "Age Group", "Sex", "HIV Status"],
+  "title": "UNAIDS Shiny90 Survey Data Input",
+  "version": "1",
+  "description": "If data does not exist, please indicate so with the value \"NA\" and ignore any warning given by Excel."
+}
