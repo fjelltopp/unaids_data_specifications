@@ -1,0 +1,89 @@
+{
+  "fields": [{
+      "name": "area_id",
+      "title": "Area ID",
+      "description": "Must be an area_id from the agreed area hierarchy.",
+      "type": "string",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "area_name",
+      "title": "Area Name",
+      "description": "Area name corresponding to area_id (optional).",
+      "type": "string"
+    },
+    {
+      "name": "sex",
+      "title": "Sex",
+      "description": "Biological sex.  Must be \"both\", \"female\", or \"male\".",
+      "type": "string",
+      "constraints": {
+        "required": true,
+          "enum": ["both", "male", "female"]
+      }
+    },
+    {
+      "name": "age_group",
+      "title": "Age Group",
+      "description": "The age group. Must be either \"Y000_014\" (0-14 y), \"Y015_999\" (15+ y) or \"Y000_999\" (0+). ",
+      "type": "string",
+      "constraints": {
+        "required": true,
+        "enum": ["Y000_014", "Y015_999", "Y000_999"]
+      }
+    },
+    {
+      "name": "calendar_quarter",
+      "title": "Calendar Quarter",
+      "description": "The calendar quarter reflected the end of reporting period. Formatted as CY20XXQY, for example CY2020Q4 for end of December 2020.",
+      "type": "string",
+      "constraints": {
+          "required": true
+      }
+    },
+    {
+      "name": "art_current",
+      "title": "Number on ART",
+      "description": "Number currently receiving ART at the end of reporting period (year).",
+      "type": "number",
+      "constraints": {
+        "required": true,
+        "minimum": 0
+      }
+    },
+    {
+      "name": "vls_tested",
+      "title": "Number VLS Tested",
+      "description": "The number of people tested for viral load suppression during the reporting period.",
+      "type": "number",
+      "constraints": {
+        "required": true,
+        "minimum": 0
+      }
+    },
+    {
+      "name": "vls_suppressed",
+      "title": "Number VLS",
+      "description": "The number of people who tested positive during the reporting period for supressed viral loads",
+      "type": "number",
+      "constraints": {
+        "required": true,
+        "minimum": 0
+      }
+    }
+  ],
+  "foreignKeys": [{
+    "fields": "area_id",
+    "reference": {
+      "resource": "3_geojson_inputs",
+      "fields": "area_id"
+    }
+  }],
+  "require_field_order": false,
+  "primaryKey": ["area_id", "sex", "age_group", "calendar_quarter"],
+  "title": "UNAIDS ART Programme Input",
+  "version": "2.1",
+  "description": "If data does not exist, please indicate so with the value \"NA\" and ignore any warning given by Excel."
+}
