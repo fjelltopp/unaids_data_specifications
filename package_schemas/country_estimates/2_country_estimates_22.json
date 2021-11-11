@@ -256,7 +256,11 @@
                 "field_name": "name",
                 "preset": "hidden_value",
                 "field_value": "Shiny 90 Survey Data"
-            },  {
+            }, {
+                "field_name": "schema",
+                "preset": "hidden_value",
+                "field_value": "1_shiny90_survey_estimates"
+            }, {
                 "field_name": "resource_type",
                 "preset": "hidden_value",
                 "field_value": "inputs-unaids-shiny90-survey"
