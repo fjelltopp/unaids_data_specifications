@@ -56,7 +56,7 @@
     {
       "name": "vls_tested",
       "title": "Number VLS Tested",
-      "description": "The number of people who received a routine viral load test during the reporting period.",
+      "description": "The number of people who received a routine viral load test during the 12 months prior to the reporting period end date.",
       "type": "number",
       "constraints": {
         "required": true,
@@ -66,7 +66,7 @@
     {
       "name": "vls_suppressed",
       "title": "Number VLS",
-      "description": "The number of people who were virally suppressed among those who received a routine viral load test during the period.",
+      "description": "The number of people who were virally suppressed among those who received a routine viral load test during the 12 months prior to the reporting period end date.",
       "type": "number",
       "constraints": {
         "required": true,
