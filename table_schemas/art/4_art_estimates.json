@@ -35,21 +35,37 @@
       }
     },
     {
+      "name": "year",
+      "title": "Year",
+      "description": "The year in which data was collected.",
+      "type": "integer",
+      "constraints": {
+          "minimum": 1970,
+          "maximum": 2022
+      }
+    },
+    {
       "name": "calendar_quarter",
       "title": "Calendar Quarter",
       "description": "The calendar quarter reflected the end of reporting period. Formatted as CY20XXQY, for example CY2020Q4 for end of December 2020.",
-      "type": "string",
-      "constraints": {
-          "required": true
-      }
+      "type": "string"
     },
     {
       "name": "art_current",
       "title": "Number on ART",
-      "description": "Number currently receiving ART at the end of reporting period (year).",
+      "description": "Number currently receiving ART at the end of reporting period.",
       "type": "number",
       "constraints": {
         "required": true,
+        "minimum": 0
+      }
+    },
+    {
+      "name": "art_new",
+      "title": "Number newly initiated on ART",
+      "description": "Number newly initiated on ART during reporting period",
+      "type": "number",
+      "constraints": {
         "minimum": 0
       }
     },
@@ -59,7 +75,6 @@
       "description": "The number of people who received a routine viral load test during the 12 months prior to the reporting period end date.",
       "type": "number",
       "constraints": {
-        "required": true,
         "minimum": 0
       }
     },
@@ -69,7 +84,6 @@
       "description": "The number of people who were virally suppressed among those who received a routine viral load test during the 12 months prior to the reporting period end date.",
       "type": "number",
       "constraints": {
-        "required": true,
         "minimum": 0
       }
     }
@@ -87,8 +101,8 @@
       "fields": "area_id"
     }
   }],
-  "require_field_order": false,
-  "primaryKey": ["area_id", "sex", "age_group", "calendar_quarter"],
+  "require_field_order": true,
+  "primaryKey": ["area_id", "sex", "age_group", "calendar_quarter", "year"],
   "title": "UNAIDS ART Programme Input",
   "version": "4",
   "description": "If data does not exist, please indicate so with the value \"NA\" and ignore any warning given by Excel."
