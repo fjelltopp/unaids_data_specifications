@@ -2,7 +2,7 @@
   "fields": [{
       "name": "Country or region",
       "title": "Country or region",
-      "description": "Country or region exactly matching the country or region in top left panel.",
+      "description": "Country or region matching exactly the country or region in top left panel.",
       "type": "string",
       "constraints": {
         "required": true
