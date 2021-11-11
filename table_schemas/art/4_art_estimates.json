@@ -74,6 +74,12 @@
       }
     }
   ],
+  "customConstraints": [
+    {
+      "constraint": "vls_tested >= vls_suppressed",
+      "description": "The total number of people who recieved a routine viral load test must be greater than the number among them who were virally supressed."
+    }
+  ],
   "foreignKeys": [{
     "fields": "area_id",
     "reference": {
