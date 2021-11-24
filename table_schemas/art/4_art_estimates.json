@@ -101,7 +101,7 @@
       "fields": "area_id"
     }
   }],
-  "require_field_order": true,
+  "require_field_order": false,
   "primaryKey": ["area_id", "sex", "age_group", "calendar_quarter", "year"],
   "title": "UNAIDS ART Programme Input",
   "version": "4",
