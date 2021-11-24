@@ -35,16 +35,6 @@
       }
     },
     {
-      "name": "year",
-      "title": "Year",
-      "description": "The year in which data was collected.",
-      "type": "integer",
-      "constraints": {
-          "minimum": 1970,
-          "maximum": 2022
-      }
-    },
-    {
       "name": "calendar_quarter",
       "title": "Calendar Quarter",
       "description": "The calendar quarter reflected the end of reporting period. Formatted as CY20XXQY, for example CY2020Q4 for end of December 2020.",
