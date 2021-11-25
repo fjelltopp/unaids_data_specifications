@@ -76,7 +76,7 @@
   }],
   "primaryKey": ["area_id", "calendar_quarter", "sex", "age_group"],
   "title": "UNAIDS Population Input",
-  "version": "2.1",
+  "version": "2.2",
   "description": "If data does not exist, please indicate so with the value \"NA\" and ignore any warning given by Excel."
 
 }

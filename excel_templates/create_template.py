@@ -8,7 +8,12 @@ from datetime import date
 """
 A quick script to generate an excel data template from a frictionless table
 schema. Helps to speed up the process of defining tables, and reduces human
-error when creating the excel templates. In time it would be good to
+error when creating the excel templates.
+
+Call the script by running:
+    python create_template.py <path_to_json schema>
+
+In time it would be good to
 
  1 - stablise and test this code
  2 - run the code on a hook when making master commits to the table schemas

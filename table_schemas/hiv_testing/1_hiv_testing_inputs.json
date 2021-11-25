@@ -16,7 +16,7 @@
       "constraints": {
           "required": true,
           "minimum": 1970,
-          "maximum": 2021
+          "maximum": 2022
       }
     },
     {
@@ -87,6 +87,6 @@
   "require_field_order": false,
   "primaryKey": ["Country or region", "Year", "Sex"],
   "title": "UNAIDS HIV Testing Input",
-  "version": "1.1",
+  "version": "1.2",
   "description": "If data does not exist, please indicate so with the value \"NA\" and ignore any warning given by Excel."
 }
