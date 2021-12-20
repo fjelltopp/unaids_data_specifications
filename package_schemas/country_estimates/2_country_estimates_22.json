@@ -322,6 +322,25 @@
                 "preset": "hidden_value",
                 "field_value": "inputs-unaids-naomi-report"
             }]
+        },
+        {
+            "name": "Key Populations Excel Workbook",
+            "about": "The Key Populations Excel Workbook",
+            "resource_type": "inputs-unaids-key-populations-workbook",
+            "resource_fields": [{
+                "field_name": "name",
+                "preset": "hidden_value",
+                "field_value": "Key Populations Excel Workbook"
+            }, {
+                "field_name": "format",
+                "label": "Format",
+                "preset": "resource_format_autocomplete",
+                "default": "XLSX"
+            }, {
+                "field_name": "resource_type",
+                "preset": "hidden_value",
+                "field_value": "inputs-unaids-key-populations-workbook"
+            }]
         }
     ],
     "resource_fields": [{
