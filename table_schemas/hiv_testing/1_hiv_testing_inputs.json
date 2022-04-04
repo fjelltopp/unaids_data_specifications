@@ -1,92 +1,101 @@
 {
-  "fields": [{
-      "name": "Country or region",
-      "title": "Country or region",
-      "description": "Country or region",
-      "type": "string",
-      "constraints": {
-        "required": true
-      }
-    },
-    {
-      "name": "Year",
-      "title": "Year",
-      "description": "The calendar year.",
-      "type": "integer",
-      "constraints": {
-          "required": true,
-          "minimum": 1970,
-          "maximum": 2022
-      }
-    },
-    {
-      "name": "Sex",
-      "title": "Sex",
-      "description": "Biological sex.  Must be \"both\", \"male\" or \"female\"",
-      "type": "string",
-      "constraints": {
-        "required": true,
-        "enum": ["both", "male", "female"]
-      }
-    },
-    {
-      "name": "Total Tests",
-      "title": "Total Tests",
-      "description": "Number of tests performed outside antenatal care clinics with the results received by a person",
-      "type": "integer",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "Total Positive Tests",
-      "title": "Total Positive Tests",
-      "description": "Total Positive Tests",
-      "type": "integer",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "Total HTC Tests",
-      "title": "Total HTC Tests",
-      "description": "Total HTC Tests",
-      "type": "integer",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "Total Positive HTC Tests",
-      "title": "Total Positive HTC Tests",
-      "description": "Total Positive HTC Tests",
-      "type": "integer",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "Total ANC Tests",
-      "title": "Total ANC Tests",
-      "description": "Total ANC Tests",
-      "type": "integer",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "Total Positive ANC Tests",
-      "title": "Total Positive ANC Tests",
-      "description": "Total Positive ANC Tests",
-      "type": "integer",
-      "constraints": {
-        "minimum": 0
-      }
-    }
-  ],
-  "require_field_order": false,
-  "primaryKey": ["Country or region", "Year", "Sex"],
-  "title": "Shiny90 HIV Testing",
-  "version": "1.2",
-  "description": "If data does not exist, please indicate so with the value \"NA\" and ignore any warning given by Excel."
+    "fields": [
+        {
+            "name": "Country or region",
+            "title": "Country or region",
+            "description": "Country or region (ie for countries that have subnational Spectrum files, the region will correspond to those used in the Spectrum subnational files)",
+            "type": "string",
+            "constraints": {
+                "required": true
+            }
+        },
+        {
+            "name": "Year",
+            "title": "Year",
+            "description": "The calendar year.",
+            "type": "integer",
+            "constraints": {
+                "required": true,
+                "minimum": 1970,
+                "maximum": 2022
+            }
+        },
+        {
+            "name": "Sex",
+            "title": "Sex",
+            "description": "Biological sex. Must be \"both\", \"male\" or \"female\"",
+            "type": "string",
+            "constraints": {
+                "required": true,
+                "enum": [
+                    "both",
+                    "male",
+                    "female"
+                ]
+            }
+        },
+        {
+            "name": "Total Tests",
+            "title": "Total Tests",
+            "description": "The annual number of HIV tests performed at the national level among the population aged 15+ years of age. This number should be equal to the total number of tests administered as part of HIV Testing and Counseling (HTC) and during antenatal care (ANC), and for which the clients received the results.",
+            "type": "integer",
+            "constraints": {
+                "minimum": 0
+            }
+        },
+        {
+            "name": "Total Positive Tests",
+            "title": "Total Positive Tests",
+            "description": "Out of the total annual number of tests, how many were found to be HIV positive. This number should be equal to the number of positive tests found during HTC (in non-pregnant population) and during ANC among pregnant women",
+            "type": "integer",
+            "constraints": {
+                "minimum": 0
+            }
+        },
+        {
+            "name": "Total HTC Tests",
+            "title": "Total HTC Tests",
+            "description": "Total annual number of tests performed in the population aged 15+ years outside of ANC services, and for which clients received the results.",
+            "type": "integer",
+            "constraints": {
+                "minimum": 0
+            }
+        },
+        {
+            "name": "Total Positive HTC Tests",
+            "title": "Total Positive HTC Tests",
+            "description": "Annual number of tests that were found to be positive for HIV outside of ANC services.",
+            "type": "integer",
+            "constraints": {
+                "minimum": 0
+            }
+        },
+        {
+            "name": "Total ANC Tests",
+            "title": "Total ANC Tests",
+            "description": "Annual number of pregnant women tested for HIV (and that received their results) as part of ANC services",
+            "type": "integer",
+            "constraints": {
+                "minimum": 0
+            }
+        },
+        {
+            "name": "Total Positive ANC Tests",
+            "title": "Total Positive ANC Tests",
+            "description": "Annual number of pregnant women found to be HIV positive during ANC services",
+            "type": "integer",
+            "constraints": {
+                "minimum": 0
+            }
+        }
+    ],
+    "require_field_order": false,
+    "primaryKey": [
+        "Country or region",
+        "Year",
+        "Sex"
+    ],
+    "title": "Shiny90 HIV Testing",
+    "version": "1.2",
+    "description": "If data does not exist, please indicate so with the value \"NA\" and ignore any warning given by Excel."
 }
