@@ -17,7 +17,7 @@
     {
       "name": "age_group",
       "title": "Age Group",
-      "description": "The age group",
+      "description": "The age group ID, of the form YXXX_ZZZ where XXX is the integer lower limit and ZZZ is the integer upper limit.",
       "type": "string",
       "constraints": {
         "required": true,
@@ -99,7 +99,7 @@
       "description": "The total number of anc clients must be greater or equal to the number of clients already known to be HIV positive, which must be greater or equal to the number of clients who are already on art."
     }
   ],
-  "title": "UNAIDS ANC Cascade Input",
+  "title": "ANC Data",
   "description": "If data does not exist, please indicate so with the value \"NA\" and ignore any warning given by Excel.",
   "version": "2.2"
 }

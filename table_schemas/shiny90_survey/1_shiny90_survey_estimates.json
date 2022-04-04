@@ -105,7 +105,7 @@
   ],
   "require_field_order": false,
   "primaryKey": ["Country or region", "Survey Id", "Year", "Age Group", "Sex", "HIV Status"],
-  "title": "UNAIDS Shiny90 Survey Data Input",
+  "title": "Shiny90 Survey Data Input",
   "version": "1",
   "description": "If data does not exist, please indicate so with the value \"NA\" and ignore any warning given by Excel."
 }

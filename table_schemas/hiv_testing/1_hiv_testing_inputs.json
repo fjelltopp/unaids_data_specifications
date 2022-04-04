@@ -32,7 +32,7 @@
     {
       "name": "Total Tests",
       "title": "Total Tests",
-      "description": "Total Tests",
+      "description": "Number of tests performed outside antenatal care clinics with the results received by a person",
       "type": "integer",
       "constraints": {
         "minimum": 0
@@ -86,7 +86,7 @@
   ],
   "require_field_order": false,
   "primaryKey": ["Country or region", "Year", "Sex"],
-  "title": "UNAIDS HIV Testing Input",
+  "title": "Shiny90 HIV Testing",
   "version": "1.2",
   "description": "If data does not exist, please indicate so with the value \"NA\" and ignore any warning given by Excel."
 }

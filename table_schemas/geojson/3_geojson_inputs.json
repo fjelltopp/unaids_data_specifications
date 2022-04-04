@@ -4,12 +4,14 @@
       "title": "Area ID",
       "constraints": {
         "required": true
-      }
+      },
+      "description": "An area_id from the specified area hierarchy."
     },
     {
       "name": "area_name",
       "title": "Name",
-      "type": "string"
+      "type": "string",
+      "description": "Area name corresponding to area_id (optional)."
     },
     {
       "name": "area_level",
@@ -19,18 +21,23 @@
         "required": true,
         "minimum": 0,
         "maximum": 8
-      }
+      },
+      "description": "An integer indicating the area admin level, where 0 represents the national level."
+
     },
     {
       "name": "parent_area_id",
-      "title": "Parent Area ID"
+      "title": "Parent Area ID",
+      "description": "Area ID for the parent area in the hierarchy."
     },
     {
       "name": "area_sort_order",
       "title": "Area Sort Order",
-      "type": "number"
+      "type": "number",
+      "description": "Integer indicating the order that the areas should be sorted by in display tools."
     }
   ],
   "require_field_order": false,
-  "primaryKey": "area_id"
+  "primaryKey": "area_id",
+  "title": "Geographic Data"
 }

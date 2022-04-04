@@ -58,7 +58,7 @@
     {
       "name": "age_group",
       "title": "Age Group",
-      "description": "The age group",
+      "description": "The age group ID, of the form YXXX_ZZZ where XXX is the integer lower limit and ZZZ is the integer upper limit.",
       "type": "string",
       "constraints": {
         "required": true
@@ -133,7 +133,7 @@
     }
   }],
   "primaryKey": ["indicator", "survey_id", "area_id", "survey_mid_calendar_quarter", "age_group", "sex"],
-  "title": "UNAIDS Survey Indicators Input",
+  "title": "Survey Data",
   "version": "2.1",
   "description": "If data does not exist, please indicate so with the value \"NA\" and ignore any warning given by Excel."
 
