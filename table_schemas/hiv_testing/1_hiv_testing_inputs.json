@@ -12,7 +12,7 @@
         {
             "name": "Year",
             "title": "Year",
-            "description": "The calendar year.",
+            "description": "The calendar year e.g. 2022",
             "type": "integer",
             "constraints": {
                 "required": true,
@@ -37,7 +37,7 @@
         {
             "name": "Total Tests",
             "title": "Total Tests",
-            "description": "The annual number of HIV tests performed at the national level among the population aged 15+ years of age. This number should be equal to the total number of tests administered as part of HIV Testing and Counseling (HTC) and during antenatal care (ANC), and for which the clients received the results.",
+            "description": "The annual number of HIV tests performed at the national level among the population aged 15+ years of age; this number should be equal to the total number of tests administered as part of HIV Testing and Counseling (HTC) and during antenatal care (ANC), and for which the clients received the results",
             "type": "integer",
             "constraints": {
                 "minimum": 0
@@ -46,7 +46,7 @@
         {
             "name": "Total Positive Tests",
             "title": "Total Positive Tests",
-            "description": "Out of the total annual number of tests, how many were found to be HIV positive. This number should be equal to the number of positive tests found during HTC (in non-pregnant population) and during ANC among pregnant women",
+            "description": "Out of the total annual number of tests, how many were found to be HIV positive? This number should be equal to the number of positive tests found during HTC (in non-pregnant population) and during ANC among pregnant women",
             "type": "integer",
             "constraints": {
                 "minimum": 0
@@ -55,7 +55,7 @@
         {
             "name": "Total HTC Tests",
             "title": "Total HTC Tests",
-            "description": "Total annual number of tests performed in the population aged 15+ years outside of ANC services, and for which clients received the results.",
+            "description": "Total annual number of tests performed in the population aged 15+ years outside of ANC services, and for which clients received the results",
             "type": "integer",
             "constraints": {
                 "minimum": 0
@@ -64,7 +64,7 @@
         {
             "name": "Total Positive HTC Tests",
             "title": "Total Positive HTC Tests",
-            "description": "Annual number of tests that were found to be positive for HIV outside of ANC services.",
+            "description": "Annual number of tests that were found to be positive for HIV outside of ANC services",
             "type": "integer",
             "constraints": {
                 "minimum": 0

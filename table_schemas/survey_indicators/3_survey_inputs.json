@@ -30,7 +30,7 @@
         {
             "name": "area_id",
             "title": "Area ID",
-            "description": "An area_id from the specified area hierarchy.",
+            "description": "An area_id from the specified area hierarchy",
             "type": "string",
             "constraints": {
                 "required": true
@@ -39,19 +39,19 @@
         {
             "name": "area_name",
             "title": "Area Name",
-            "description": "Area name corresponding to area_id (optional).",
+            "description": "Area name corresponding to area_id (optional)",
             "type": "string"
         },
         {
             "name": "res_type",
             "title": "Residence Type",
-            "description": "Residence Type",
+            "description": "Residence type",
             "type": "string"
         },
         {
             "name": "sex",
             "title": "Sex",
-            "description": "Biological sex. Must be \"both\", \"male\", or \"female\".",
+            "description": "Biological sex - must be either \"both\", \"female\", or \"male\"",
             "type": "string",
             "constraints": {
                 "required": true,
@@ -65,7 +65,7 @@
         {
             "name": "age_group",
             "title": "Age Group",
-            "description": "The age group ID, of the form YXXX_ZZZ where XXX is the integer lower limit and ZZZ is the integer upper limit.",
+            "description": "The age group ID, of the form YXXX_ZZZ where XXX is the integer lower limit and ZZZ is the integer upper limit",
             "type": "string",
             "constraints": {
                 "required": true
