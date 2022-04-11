@@ -1,111 +1,135 @@
 {
-  "fields": [{
-      "name": "Country or region",
-      "title": "Country or region",
-      "description": "Country or region matching exactly the country or region in top left panel.",
-      "type": "string",
-      "constraints": {
-        "required": true
-      }
-    }, {
-        "name": "Survey Id",
-        "title": "Survey ID",
-        "description": "A unique identifier for the survey (each survey must have a unique name)",
-        "type": "string",
-        "constraints": {
-          "required": true
+    "fields": [
+        {
+            "name": "Country or region",
+            "title": "Country or region",
+            "description": "Country or region (ie for countries that have subnational Spectrum files, the region will correspond to those used in the Spectrum subnational files)",
+            "type": "string",
+            "constraints": {
+                "required": true
+            }
+        },
+        {
+            "name": "Survey Id",
+            "title": "Survey ID",
+            "description": "A unique identifier for the survey (each survey must have a unique name)",
+            "type": "string",
+            "constraints": {
+                "required": true
+            }
+        },
+        {
+            "name": "Year",
+            "title": "Year",
+            "description": "Year in which survey was conducted; year of survey fieldwork midpoint if survey spanned multiple years",
+            "type": "integer",
+            "constraints": {
+                "required": true,
+                "minimum": 1970,
+                "maximum": 2022
+            }
+        },
+        {
+            "name": "Age Group",
+            "title": "Age Group",
+            "description": "The age group - must be \"15-24\", \"25-34\", \"35-49\", \"50+\", \"15-49\" or \"15+\"",
+            "type": "string",
+            "constraints": {
+                "required": true,
+                "enum": [
+                    "15-24",
+                    "25-34",
+                    "35-49",
+                    "50+",
+                    "15-49",
+                    "15+"
+                ]
+            }
+        },
+        {
+            "name": "Sex",
+            "title": "Sex",
+            "description": "Biological sex - must be either \"both\", \"female\", or \"male\"",
+            "type": "string",
+            "constraints": {
+                "required": true,
+                "enum": [
+                    "both",
+                    "male",
+                    "female"
+                ]
+            }
+        },
+        {
+            "name": "HIV Status",
+            "title": "HIV Status",
+            "description": "The HIV status. Must be \"all\", \"negative\" or \"positive\"",
+            "type": "string",
+            "constraints": {
+                "required": true,
+                "enum": [
+                    "all",
+                    "negative",
+                    "positive"
+                ]
+            }
+        },
+        {
+            "name": "Estimate",
+            "title": "Estimate",
+            "description": "Estimate for proportion ever tested for HIV; as a percentage (e.g. 87.6 rather than proportion 0.876)",
+            "type": "number",
+            "constraints": {
+                "minimum": 0
+            }
+        },
+        {
+            "name": "Standard Error",
+            "title": "Standard Error",
+            "description": "Standard Error of the estimate (as a percentage). Should take into account survey design effects",
+            "type": "number",
+            "constraints": {
+                "minimum": 0
+            }
+        },
+        {
+            "name": "Lower Confidence Interval",
+            "title": "Lower Confidence Interval",
+            "description": "Lower limit of the 95% confidence interval of the survey estimate (as a percentage)",
+            "type": "number",
+            "constraints": {
+                "minimum": 0
+            }
+        },
+        {
+            "name": "Upper Confidence Interval",
+            "title": "Upper Confidence Interval",
+            "description": "Upper limit of the 95% confidence interval of the survey estimate (as a percentage)",
+            "type": "number",
+            "constraints": {
+                "minimum": 0
+            }
+        },
+        {
+            "name": "Counts",
+            "title": "Counts",
+            "description": "Unweighted counts of the number of survey respondents included in the stratification group",
+            "type": "integer",
+            "constraints": {
+                "minimum": 0
+            }
         }
-    },
-    {
-      "name": "Year",
-      "title": "Year",
-      "description": "The year in which survey was conducted; year of survey fieldwork midpoint if survey spanned multiple years.",
-      "type": "integer",
-      "constraints": {
-          "required": true,
-          "minimum": 1970,
-          "maximum": 2022
-      }
-    },
-    {
-      "name": "Age Group",
-      "title": "Age Group",
-      "description": "The age group. Must be \"15-24\", \"25-34\", \"35-49\", \"50+\", \"15-49\" or \"15+\".",
-      "type": "string",
-      "constraints": {
-        "required": true,
-        "enum": ["15-24", "25-34", "35-49", "50+", "15-49", "15+"]
-      }
-    },
-    {
-      "name": "Sex",
-      "title": "Sex",
-      "description": "The biological sex.  Must be \"both\", \"male\" or \"female\".",
-      "type": "string",
-      "constraints": {
-        "required": true,
-        "enum": ["both", "male", "female"]
-      }
-    },
-    {
-      "name": "HIV Status",
-      "title": "HIV Status",
-      "description": "The HIV status. Must be \"all\", \"negative\" or \"positive\".",
-      "type": "string",
-      "constraints": {
-        "required": true,
-        "enum": ["all", "negative", "positive"]
-      }
-    },
-    {
-      "name": "Estimate",
-      "title": "Estimate",
-      "description": "Estimate for proportion ever tested for HIV; as a percentage (e.g. 87.6 rather than proportion 0.876).",
-      "type": "number",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "Standard Error",
-      "title": "Standard Error",
-      "description": "Standard Error of the estimate (as a percentage). Should take into account survey design effects.",
-      "type": "number",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "Lower Confidence Interval",
-      "title": "Lower Confidence Interval",
-      "description": "Lower limit of the 95% confidence interval of the survey estimate (as a percentage).",
-      "type": "number",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "Upper Confidence Interval",
-      "title": "Upper Confidence Interval",
-      "description": "Upper limit of the 95% confidence interval of the survey estimate (as a percentage).",
-      "type": "number",
-      "constraints": {
-        "minimum": 0
-      }
-    },
-    {
-      "name": "Counts",
-      "title": "Counts",
-      "description": "Unweighted counts of the number of survey respondents included in the stratification group.",
-      "type": "integer",
-      "constraints": {
-        "minimum": 0
-      }
-    }
-  ],
-  "require_field_order": false,
-  "primaryKey": ["Country or region", "Survey Id", "Year", "Age Group", "Sex", "HIV Status"],
-  "title": "UNAIDS Shiny90 Survey Data Input",
-  "version": "1",
-  "description": "If data does not exist, please indicate so with the value \"NA\" and ignore any warning given by Excel."
+    ],
+    "require_field_order": false,
+    "primaryKey": [
+        "Country or region",
+        "Survey Id",
+        "Year",
+        "Age Group",
+        "Sex",
+        "HIV Status"
+    ],
+    "title": "Shiny90 Survey Data Input",
+    "version": "1",
+    "description": "If data does not exist, please indicate so with the value \"NA\" and ignore any warning given by Excel."
 }
