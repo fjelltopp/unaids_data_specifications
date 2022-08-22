@@ -57,15 +57,6 @@
             }
         },
         {
-            "name": "anc_known_neg",
-            "title": "Number Known Negative",
-            "description": "Number of ANC clients who self-report known HIV negative prior to first ANC visit and are not tested for HIV",
-            "type": "integer",
-            "constraints": {
-                "minimum": 0
-            }
-        },
-        {
             "name": "anc_already_art",
             "title": "Number Already on ART",
             "description": "Number of ANC clients already on ART prior to first ANC visit during a pregnancy",
@@ -93,9 +84,18 @@
             }
         },
         {
+            "name": "anc_known_neg",
+            "title": "Number Known Negative",
+            "description": "Number of ANC clients who self-report known HIV negative prior to first ANC visit and are not tested for HIV",
+            "type": "integer",
+            "constraints": {
+                "minimum": 0
+            }
+        },
+        {
             "name": "births_facility",
             "title": "Number of Facility Births",
-            "description": "Number of births that have taken place in the health facility.",
+            "description": "Number of births recorded at health facilities.",
             "type": "integer",
             "constraints": {
                 "minimum": 0
@@ -129,6 +129,10 @@
         {
             "constraint": "anc_clients >= anc_tested_pos",
             "description": "The total number of anc clients must be greater or equal to the number of clients already known to be HIV positive."
+        },
+        {
+            "constraint": "anc_tested >= anc_tested_pos",
+            "description": "The total number of anc clients tested must be greater or equal to the number of those clients who tested positive."
         }
     ],
     "title": "ANC Data",
