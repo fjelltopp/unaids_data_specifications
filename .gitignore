@@ -98,3 +98,6 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+# Office lock files
+.~lock.*#
