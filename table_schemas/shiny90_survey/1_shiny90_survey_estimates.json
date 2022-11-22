@@ -35,15 +35,7 @@
             "description": "The age group - must be \"15-24\", \"25-34\", \"35-49\", \"50+\", \"15-49\" or \"15+\"",
             "type": "string",
             "constraints": {
-                "required": true,
-                "enum": [
-                    "15-24",
-                    "25-34",
-                    "35-49",
-                    "50+",
-                    "15-49",
-                    "15+"
-                ]
+                "required": true
             }
         },
         {
