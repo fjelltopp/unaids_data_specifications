@@ -32,7 +32,7 @@
         {
             "name": "Age Group",
             "title": "Age Group",
-            "description": "The age group - must be \"15-24\", \"25-34\", \"35-49\", \"50+\", \"15-49\" or \"15+\"",
+            "description": "The age groups used for model fitting are: \"15-24\", \"25-34\", \"35-49\", \"50+\", \"15-49\" or \"15+\". Others may be present also. ",
             "type": "string",
             "constraints": {
                 "required": true
