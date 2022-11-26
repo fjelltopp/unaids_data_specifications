@@ -324,6 +324,25 @@
             }]
         },
         {
+            "name": "Naomi Comparison Report",
+            "about": "The Naomi Comparison report file",
+            "resource_type": "inputs-unaids-naomi-comparison-report",
+            "resource_fields": [{
+                "field_name": "name",
+                "preset": "hidden_value",
+                "field_value": "Naomi Comparison Report"
+            }, {
+                "field_name": "format",
+                "label": "Format",
+                "preset": "resource_format_autocomplete",
+                "default": "URL"
+            }, {
+                "field_name": "resource_type",
+                "preset": "hidden_value",
+                "field_value": "inputs-unaids-naomi-comparison-report"
+            }]
+        },
+        {
             "name": "Key Populations Excel Workbook",
             "about": "The Key Populations Excel Workbook",
             "resource_type": "inputs-unaids-key-populations-workbook",
