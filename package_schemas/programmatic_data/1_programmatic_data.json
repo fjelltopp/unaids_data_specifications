@@ -108,9 +108,6 @@
                 "field_name": "resource_type",
                 "preset": "hidden_value",
                 "field_value": "programmatic-anc"
-            }, {
-                "field_name": "foreign_keys",
-                "preset": "foreign_keys"
             }]
         },
         {
@@ -130,9 +127,6 @@
                 "field_name": "resource_type",
                 "preset": "hidden_value",
                 "field_value": "programmatic-art"
-            }, {
-                "field_name": "foreign_keys",
-                "preset": "foreign_keys"
             }]
         }
     ],
