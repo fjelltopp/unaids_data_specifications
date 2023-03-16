@@ -106,7 +106,7 @@
             "name": "Counts",
             "title": "Counts",
             "description": "Unweighted counts of the number of survey respondents included in the stratification group",
-            "type": "integer",
+            "type": "number",
             "constraints": {
                 "minimum": 0
             }
