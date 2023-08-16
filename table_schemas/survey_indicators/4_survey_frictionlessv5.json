@@ -128,7 +128,7 @@
     {
       "fields": "area_id",
       "reference": {
-        "resource": "inputs-unaids-geographic",
+        "resource": "4_geojson_frictionlessv5",
         "fields": "area_id"
       }
     }
