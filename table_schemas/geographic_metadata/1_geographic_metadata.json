@@ -2,6 +2,7 @@
   "fields": [{
       "name": "iso3",
       "title": "Country ISO3 Code",
+      "type": "string",
       "constraints": {
         "required": true
       }
