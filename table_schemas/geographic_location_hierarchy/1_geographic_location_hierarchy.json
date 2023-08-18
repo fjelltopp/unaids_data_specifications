@@ -2,6 +2,7 @@
   "fields": [{
       "name": "area_id",
       "title": "Area ID",
+      "type": "string",
       "constraints": {
         "required": true
       }
@@ -24,6 +25,7 @@
     {
       "name": "parent_area_id",
       "title": "Parent Area ID",
+      "type": "string",
       "constraints": {
         "required": true
       }

@@ -2,6 +2,7 @@
   "fields": [{
       "name": "area_id",
       "title": "Area ID",
+      "type": "string",
       "constraints": {
         "required": true
       }
