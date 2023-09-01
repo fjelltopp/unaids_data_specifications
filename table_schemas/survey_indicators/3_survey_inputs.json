@@ -128,7 +128,7 @@
     {
       "fields": "area_id",
       "reference": {
-        "resource": "4_geojson_frictionlessv5",
+        "resource": "3_geojson_inputs",
         "fields": "area_id"
       }
     }
