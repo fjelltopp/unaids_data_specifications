@@ -41,5 +41,6 @@
     ],
     "require_field_order": false,
     "primaryKey": "area_id",
-    "title": "Geographic Data"
+    "title": "Geographic Data",
+    "missingValues": ["", "NA"]
 }

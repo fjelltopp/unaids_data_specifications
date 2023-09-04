@@ -137,5 +137,7 @@
     ],
     "title": "ANC Data",
     "description": "If data does not exist, please indicate so with the value \"NA\" and ignore any warning given by Excel.",
-    "version": "3.0"
+    "version": "3.0",
+    "missingValues": ["", "NA"]
+
 }
