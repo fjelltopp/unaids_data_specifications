@@ -123,5 +123,6 @@
     ],
     "title": "Shiny90 Survey Data Input",
     "version": "1",
-    "description": "If data does not exist, please indicate so with the value \"NA\" and ignore any warning given by Excel."
+    "description": "If data does not exist, please indicate so with the value \"NA\" and ignore any warning given by Excel.",
+    "missing_values": ["NA"]
 }
