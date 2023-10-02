@@ -1,7 +1,7 @@
 {
     "scheming_version": 1,
     "dataset_type": "geographic-data-package-3",
-    "name": "Administrative Boundaries",
+    "name": "Geographic Data",
     "about": "",
     "about_url": "http://github.com/ckan/ckanext-scheming",
     "display_group_order": ["General", "Access Restriction"],
