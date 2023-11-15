@@ -108,6 +108,10 @@
             "field_name": "org_to_allow_transfer_to",
             "preset": "org_to_allow_transfer_to",
             "display_group": "Inputs to UNAIDS Estimates 2021"
+        },
+        {
+          "field_name": "locked",
+          "preset": "locked"
         }
     ],
     "resources": [
