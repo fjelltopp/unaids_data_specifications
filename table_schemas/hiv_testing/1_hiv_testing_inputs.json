@@ -12,12 +12,12 @@
         {
             "name": "Year",
             "title": "Year",
-            "description": "The calendar year e.g. 2022",
+            "description": "The calendar year e.g. 2023",
             "type": "integer",
             "constraints": {
                 "required": true,
                 "minimum": 1970,
-                "maximum": 2022
+                "maximum": 2023
             }
         },
         {
