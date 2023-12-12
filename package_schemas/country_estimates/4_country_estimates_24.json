@@ -419,6 +419,29 @@
           "field_value": "inputs-unaids-key-populations-workbook"
         }
       ]
+    },
+    {
+      "name": "VMMC Excel Workbook",
+      "about": "VMMC Workbook data",
+      "resource_type": "inputs-unaids-vmmc-workbook",
+      "resource_fields": [
+        {
+          "field_name": "name",
+          "preset": "hidden_value",
+          "field_value": "VMMC Excel Workbook"
+        },
+        {
+          "field_name": "format",
+          "label": "Format",
+          "preset": "resource_format_autocomplete",
+          "default": "XLSX"
+        },
+        {
+          "field_name": "resource_type",
+          "preset": "hidden_value",
+          "field_value": "inputs-unaids-vmmc-workbook"
+        }
+      ]
     }
   ],
   "resource_fields": [
