@@ -421,14 +421,14 @@
       ]
     },
     {
-      "name": "VMMC Excel Workbook",
-      "about": "VMMC Workbook data",
-      "resource_type": "inputs-unaids-vmmc-workbook",
+      "name": "VMMC Outputs",
+      "about": "VMMC Outputs Excel Workbook",
+      "resource_type": "inputs-unaids-vmmc-coverage-outputs",
       "resource_fields": [
         {
           "field_name": "name",
           "preset": "hidden_value",
-          "field_value": "VMMC Excel Workbook"
+          "field_value": "VMMC Outputs"
         },
         {
           "field_name": "format",
@@ -439,7 +439,30 @@
         {
           "field_name": "resource_type",
           "preset": "hidden_value",
-          "field_value": "inputs-unaids-vmmc-workbook"
+          "field_value": "inputs-unaids-vmmc-coverage-outputs"
+        }
+      ]
+    },
+    {
+      "name": "VMMC Inputs",
+      "about": "VMMC Inputs Excel Workbook",
+      "resource_type": "inputs-unaids-vmmc-coverage-inputs",
+      "resource_fields": [
+        {
+          "field_name": "name",
+          "preset": "hidden_value",
+          "field_value": "VMMC Inputs"
+        },
+        {
+          "field_name": "format",
+          "label": "Format",
+          "preset": "resource_format_autocomplete",
+          "default": "XLSX"
+        },
+        {
+          "field_name": "resource_type",
+          "preset": "hidden_value",
+          "field_value": "inputs-unaids-vmmc-coverage-inputs"
         }
       ]
     }
