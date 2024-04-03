@@ -306,29 +306,6 @@
       ]
     },
     {
-      "name": "Shiny90 Output ZIP",
-      "about": "The Shiny90 output zip file",
-      "resource_type": "inputs-unaids-shiny90-output-zip",
-      "resource_fields": [
-        {
-          "field_name": "name",
-          "preset": "hidden_value",
-          "field_value": "Shiny 90 Output ZIP"
-        },
-        {
-          "field_name": "format",
-          "label": "Format",
-          "preset": "resource_format_autocomplete",
-          "default": "ZIP"
-        },
-        {
-          "field_name": "resource_type",
-          "preset": "hidden_value",
-          "field_value": "inputs-unaids-shiny90-output-zip"
-        }
-      ]
-    },
-    {
       "name": "Naomi Output ZIP",
       "about": "The Naomi output zip file",
       "resource_type": "inputs-unaids-naomi-output-zip",
