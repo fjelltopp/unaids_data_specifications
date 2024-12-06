@@ -442,6 +442,52 @@
           "field_value": "inputs-unaids-vmmc-coverage-inputs"
         }
       ]
+    },
+    {
+      "name": "Goals Input",
+      "about": "Goals Input Excel Workbook",
+      "resource_type": "inputs-unaids-goals-input",
+      "resource_fields": [
+        {
+          "field_name": "name",
+          "preset": "hidden_value",
+          "field_value": "Goals Input"
+        },
+        {
+          "field_name": "format",
+          "label": "Format",
+          "preset": "resource_format_autocomplete",
+          "default": "XLSX"
+        },
+        {
+          "field_name": "resource_type",
+          "preset": "hidden_value",
+          "field_value": "inputs-unaids-goals-input"
+        }
+      ]
+    },
+    {
+      "name": "Goals Base PJNZ",
+      "about": "The Goals Base PJNZ file",
+      "resource_type": "inputs-unaids-goals-base-pjnz",
+      "resource_fields": [
+        {
+          "field_name": "name",
+          "preset": "hidden_value",
+          "field_value": "Goals Base PJNZ"
+        },
+        {
+          "field_name": "format",
+          "label": "Format",
+          "preset": "resource_format_autocomplete",
+          "default": "PJNZ"
+        },
+        {
+          "field_name": "resource_type",
+          "preset": "hidden_value",
+          "field_value": "inputs-unaids-goals-base-pjnz"
+        }
+      ]
     }
   ],
   "resource_fields": [
