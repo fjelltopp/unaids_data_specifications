@@ -93,7 +93,7 @@
       "label": "Year",
       "field_name": "year",
       "preset": "hidden_value",
-      "field_value": "2025",
+      "field_value": "2026",
       "validators": "unique_combination",
       "display_group": "HIV Estimates 2026"
     },
