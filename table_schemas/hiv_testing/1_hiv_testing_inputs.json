@@ -12,12 +12,12 @@
         {
             "name": "Year",
             "title": "Year",
-            "description": "The calendar year e.g. 2025",
+            "description": "The calendar year e.g. 2026",
             "type": "integer",
             "constraints": {
                 "required": true,
                 "minimum": 1970,
-                "maximum": 2025
+                "maximum": 2026
             }
         },
         {
